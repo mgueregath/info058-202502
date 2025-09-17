@@ -483,17 +483,17 @@
 <p>Una <strong>secuencia</strong> ejecuta instrucciones <strong>en orden</strong>, de arriba hacia abajo.<br />
 Es el bloque más básico: <em>lee datos → procesa → muestra resultados</em>.</p>
 <h2 id="ejemplo-1-sumar-dos-numeros">Ejemplo 1: sumar dos números<a class="headerlink" href="#ejemplo-1-sumar-dos-numeros" title="Permanent link">&para;</a></h2>
-<pre><code class="language-python">a = int(input(&quot;Ingresa A: &quot;))
-b = int(input(&quot;Ingresa B: &quot;))
-suma = a + b
-print(&quot;La suma es&quot;, suma)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa A: &quot;</span><span class="p">))</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingresa B: &quot;</span><span class="p">))</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">suma</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La suma es&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="ejemplo-2-area-de-un-rectangulo">Ejemplo 2: área de un rectángulo<a class="headerlink" href="#ejemplo-2-area-de-un-rectangulo" title="Permanent link">&para;</a></h2>
-<pre><code class="language-python">base = float(input(&quot;Base: &quot;))
-altura = float(input(&quot;Altura: &quot;))
-area = base * altura
-print(&quot;Área =&quot;, area)
-</code></pre>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">base</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Base: &quot;</span><span class="p">))</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">altura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Altura: &quot;</span><span class="p">))</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">area</span> <span class="o">=</span> <span class="n">base</span> <span class="o">*</span> <span class="n">altura</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Área =&quot;</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span>
+</code></pre></div>
 <hr />
 <h2 id="ejercicios">Ejercicios<a class="headerlink" href="#ejercicios" title="Permanent link">&para;</a></h2>
 <h3 id="e1-conversion-de-unidades">E1. Conversión de unidades<a class="headerlink" href="#e1-conversion-de-unidades" title="Permanent link">&para;</a></h3>
@@ -501,12 +501,10 @@ print(&quot;Área =&quot;, area)
 <details>
 <summary>Ver solución</summary>
 
-
-<pre><code class="language-python">pies = float(input(&quot;Pies: &quot;))
-metros = pies * 0.3048
-print(&quot;Metros:&quot;, metros)
-</code></pre>
-
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">pies</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Pies: &quot;</span><span class="p">))</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">metros</span> <span class="o">=</span> <span class="n">pies</span> <span class="o">*</span> <span class="mf">0.3048</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Metros:&quot;</span><span class="p">,</span> <span class="n">metros</span><span class="p">)</span>
+</code></pre></div>
 </details>
 
 <hr />
@@ -515,14 +513,12 @@ print(&quot;Metros:&quot;, metros)
 <details>
 <summary>Ver solución</summary>
 
-
-<pre><code class="language-python">x = float(input(&quot;x: &quot;))
-y = float(input(&quot;y: &quot;))
-z = float(input(&quot;z: &quot;))
-prom = (x + y + z) / 3
-print(&quot;Promedio:&quot;, prom)
-</code></pre>
-
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;x: &quot;</span><span class="p">))</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;y: &quot;</span><span class="p">))</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">z</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;z: &quot;</span><span class="p">))</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">prom</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Promedio:&quot;</span><span class="p">,</span> <span class="n">prom</span><span class="p">)</span>
+</code></pre></div>
 </details>
 
 <hr />
@@ -532,11 +528,9 @@ print(&quot;Promedio:&quot;, prom)
 <details>
 <summary>Ver solución</summary>
 
-
-<pre><code class="language-python">nombre = input(&quot;¿Cuál es tu nombre? &quot;)
-print(f&quot;Me alegro de conocerte {nombre}&quot;)
-</code></pre>
-
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre? &quot;</span><span class="p">)</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Me alegro de conocerte </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
 </details>
 
 
