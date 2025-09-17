@@ -706,6 +706,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notas-sobre-resaltado-colores-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notas sobre resaltado (colores) de Python
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1139,6 +1148,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#notas-sobre-resaltado-colores-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notas sobre resaltado (colores) de Python
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1168,16 +1186,33 @@ Imagina que quieres dar 5 aplausos: en vez de escribir <code>print("👏")</code
 </ul>
 <hr />
 <h2 id="ejemplos-por-tipo">Ejemplos por tipo<a class="headerlink" href="#ejemplos-por-tipo" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>En cada ejemplo verás primero la <strong>salida esperada</strong> y luego el <strong>código</strong>.</p>
+</blockquote>
 <h3 id="1-iterar-con-rangestop">1) Iterar con <code>range(stop)</code><a class="headerlink" href="#1-iterar-con-rangestop" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Ejemplo</strong>: imprimir 3 aplausos</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">👏
+👏
+👏
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for _ in range(3):
     print(&quot;👏&quot;)
 </code></pre>
 <ul>
 <li><strong>Ejemplo</strong>: mostrar índices 0..4</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">i = 0
+i = 1
+i = 2
+i = 3
+i = 4
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for i in range(5):  # 0,1,2,3,4
     print(&quot;i =&quot;, i)
 </code></pre>
@@ -1186,6 +1221,15 @@ Imagina que quieres dar 5 aplausos: en vez de escribir <code>print("👏")</code
 <ul>
 <li><strong>Ejemplo</strong>: cuenta regresiva de 5 a 1</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">5
+4
+3
+2
+1
+¡Despegue! 🚀
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for s in range(5, 0, -1):
     print(s)
 print(&quot;¡Despegue! 🚀&quot;)
@@ -1193,14 +1237,28 @@ print(&quot;¡Despegue! 🚀&quot;)
 <ul>
 <li><strong>Ejemplo</strong>: números pares entre 2 y 10</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">2
+4
+6
+8
+10
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for n in range(2, 11, 2):
-    print(n)  # 2,4,6,8,10
+    print(n)
 </code></pre>
 <hr />
 <h3 id="3-recorrer-listas">3) Recorrer listas<a class="headerlink" href="#3-recorrer-listas" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Ejemplo</strong>: lista de compras</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Comprar: pan
+Comprar: leche
+Comprar: huevos
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">compras = [&quot;pan&quot;, &quot;leche&quot;, &quot;huevos&quot;]
 for item in compras:
     print(&quot;Comprar:&quot;, item)
@@ -1208,6 +1266,10 @@ for item in compras:
 <ul>
 <li><strong>Ejemplo</strong>: promedio de calificaciones</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Promedio: 5.45
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">notas = [5.0, 6.3, 4.8, 5.7]
 suma = 0
 for n in notas:
@@ -1219,6 +1281,12 @@ print(&quot;Promedio:&quot;, suma/len(notas))
 <ul>
 <li><strong>Ejemplo</strong>: deletrear un nombre</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">A
+n
+a
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">nombre = &quot;Ana&quot;
 for ch in nombre:
     print(ch)
@@ -1226,18 +1294,28 @@ for ch in nombre:
 <ul>
 <li><strong>Ejemplo</strong>: contar dígitos en un texto</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Dígitos: 4
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">texto = &quot;abc123x9&quot;
 cont = 0
 for ch in texto:
     if ch.isdigit():
         cont += 1
-print(&quot;Dígitos:&quot;, cont)  # 4
+print(&quot;Dígitos:&quot;, cont)
 </code></pre>
 <hr />
 <h3 id="5-enumerate-indice-valor">5) <code>enumerate</code> (índice + valor)<a class="headerlink" href="#5-enumerate-indice-valor" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Ejemplo</strong>: numerar pasos de una receta</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Paso 1: Precalentar horno
+Paso 2: Mezclar ingredientes
+Paso 3: Hornear 20 min
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">pasos = [&quot;Precalentar horno&quot;, &quot;Mezclar ingredientes&quot;, &quot;Hornear 20 min&quot;]
 for i, paso in enumerate(pasos, start=1):
     print(f&quot;Paso {i}: {paso}&quot;)
@@ -1245,6 +1323,12 @@ for i, paso in enumerate(pasos, start=1):
 <ul>
 <li><strong>Ejemplo</strong>: revisar posiciones con validación</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">0 10 OK
+1 -3 NEGATIVO
+2 25 OK
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">valores = [10, -3, 25]
 for idx, v in enumerate(valores):
     estado = &quot;OK&quot; if v &gt;= 0 else &quot;NEGATIVO&quot;
@@ -1255,6 +1339,12 @@ for idx, v in enumerate(valores):
 <ul>
 <li><strong>Ejemplo</strong>: nombres y teléfonos</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Ana: 111
+Luis: 222
+Marta: 333
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">nombres = [&quot;Ana&quot;, &quot;Luis&quot;, &quot;Marta&quot;]
 telefonos = [&quot;111&quot;, &quot;222&quot;, &quot;333&quot;]
 for nom, tel in zip(nombres, telefonos):
@@ -1263,11 +1353,15 @@ for nom, tel in zip(nombres, telefonos):
 <ul>
 <li><strong>Ejemplo</strong>: suma elemento a elemento de dos listas</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">[11, 22, 33]
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">a = [1, 2, 3]
 b = [10, 20, 30]
 c = []
 for x, y in zip(a, b):
-    c.append(x + y)  # [11, 22, 33]
+    c.append(x + y)
 print(c)
 </code></pre>
 <hr />
@@ -1275,6 +1369,12 @@ print(c)
 <ul>
 <li><strong>Ejemplo</strong>: precios por producto</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">pan: $1200
+leche: $1100
+huevos: $1800
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">precios = {&quot;pan&quot;: 1200, &quot;leche&quot;: 1100, &quot;huevos&quot;: 1800}
 for producto, precio in precios.items():
     print(f&quot;{producto}: ${precio}&quot;)
@@ -1282,6 +1382,11 @@ for producto, precio in precios.items():
 <ul>
 <li><strong>Ejemplo</strong>: formatear reporte clave→valor</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">host = localhost
+port = 5432
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">cfg = {&quot;host&quot;: &quot;localhost&quot;, &quot;port&quot;: 5432}
 for k, v in cfg.items():
     print(f&quot;{k} = {v}&quot;)
@@ -1291,19 +1396,29 @@ for k, v in cfg.items():
 <ul>
 <li><strong>Ejemplo</strong>: buscar un producto y <strong>parar</strong> al encontrarlo</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Encontrado: leche
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">busco = &quot;leche&quot;
 for p in [&quot;pan&quot;, &quot;huevos&quot;, &quot;leche&quot;, &quot;arroz&quot;]:
     if p == busco:
         print(&quot;Encontrado:&quot;, p)
-        break  # detiene el for
+        break
 </code></pre>
 <ul>
 <li><strong>Ejemplo</strong>: saltar negativos y procesar solo no negativos</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">OK: 5
+OK: 0
+OK: 7
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">datos = [5, -2, 0, 7, -6]
 for d in datos:
     if d &lt; 0:
-        continue  # salta a la siguiente iteración
+        continue
     print(&quot;OK:&quot;, d)
 </code></pre>
 <hr />
@@ -1311,6 +1426,10 @@ for d in datos:
 <ul>
 <li><strong>Ejemplo</strong>: buscar cupón válido</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Cupón válido: OK-2025
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">cupones = [&quot;CAD-2023&quot;, &quot;PROMO10&quot;, &quot;OK-2025&quot;]
 for c in cupones:
     if c.startswith(&quot;OK-&quot;):
@@ -1322,6 +1441,10 @@ else:
 <ul>
 <li><strong>Ejemplo</strong>: primalidad muy simple (divisor en 2..n-1)</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Primo
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">n = 13
 for d in range(2, n):
     if n % d == 0:
@@ -1335,6 +1458,12 @@ else:
 <ul>
 <li><strong>Ejemplo</strong>: mini tabla en la pizarra (1 a 3)</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">1x1=1  1x2=2  1x3=3  
+2x1=2  2x2=4  2x3=6  
+3x1=3  3x2=6  3x3=9  
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for i in range(1, 4):
     for j in range(1, 4):
         print(f&quot;{i}x{j}={i*j}&quot;, end=&quot;  &quot;)
@@ -1343,6 +1472,12 @@ else:
 <ul>
 <li><strong>Ejemplo</strong>: imprimir matriz identidad 3x3</li>
 </ul>
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">n = 3
 for i in range(n):
     fila = []
@@ -1353,209 +1488,221 @@ for i in range(n):
 <hr />
 <h2 id="ejercicios-30-dificultad-incremental">Ejercicios (30, dificultad incremental)<a class="headerlink" href="#ejercicios-30-dificultad-incremental" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Los primeros 10 son <strong>muy iniciales</strong>. Luego aumenta gradualmente la dificultad.</p>
+<p>Para los que <strong>requieren entrada</strong>, incluimos una <strong>ejecución de ejemplo</strong> con datos de muestra.</p>
 </blockquote>
 <h3 id="e1-imprime-hola-5-veces">E1. Imprime "Hola" 5 veces<a class="headerlink" href="#e1-imprime-hola-5-veces" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Hola
+Hola
+Hola
+Hola
+Hola
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for _ in range(5):
     print(&quot;Hola&quot;)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e2-numeros-del-1-al-5">E2. Números del 1 al 5<a class="headerlink" href="#e2-numeros-del-1-al-5" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">1
+2
+3
+4
+5
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for n in range(1, 6):
     print(n)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e3-numeros-del-0-al-4">E3. Números del 0 al 4<a class="headerlink" href="#e3-numeros-del-0-al-4" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">0
+1
+2
+3
+4
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for n in range(5):
     print(n)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e4-pares-hasta-el-10-246810">E4. Pares hasta el 10 (2,4,6,8,10)<a class="headerlink" href="#e4-pares-hasta-el-10-246810" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">2
+4
+6
+8
+10
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for n in range(2, 11, 2):
     print(n)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e5-impares-del-1-al-9">E5. Impares del 1 al 9<a class="headerlink" href="#e5-impares-del-1-al-9" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">1
+3
+5
+7
+9
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for n in range(1, 10, 2):
     print(n)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e6-recorrer-e-imprimir-una-lista-simple">E6. Recorrer e imprimir una lista simple<a class="headerlink" href="#e6-recorrer-e-imprimir-una-lista-simple" title="Permanent link">&para;</a></h3>
-<p>Dada <code>colores = ["rojo","verde","azul"]</code>, imprímelos uno por línea.</p>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">rojo
+verde
+azul
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">colores = [&quot;rojo&quot;,&quot;verde&quot;,&quot;azul&quot;]
 for c in colores:
     print(c)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e7-recorrer-letras-de-una-palabra-ingresada">E7. Recorrer letras de una palabra ingresada<a class="headerlink" href="#e7-recorrer-letras-de-una-palabra-ingresada" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Palabra: Hola
+H
+o
+l
+a
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">pal = input(&quot;Palabra: &quot;)
 for ch in pal:
     print(ch)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e8-contar-elementos-de-una-lista-sin-len">E8. Contar elementos de una lista sin <code>len()</code><a class="headerlink" href="#e8-contar-elementos-de-una-lista-sin-len" title="Permanent link">&para;</a></h3>
-<p>Dada <code>nums = [3,7,1,9]</code>, cuenta cuántos elementos tiene.</p>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">4
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">nums = [3,7,1,9]
 cont = 0
 for _ in nums:
     cont += 1
 print(cont)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e9-repetir-un-nombre-n-veces">E9. Repetir un nombre <code>n</code> veces<a class="headerlink" href="#e9-repetir-un-nombre-n-veces" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Nombre: Ana
+Veces: 3
+Ana
+Ana
+Ana
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">nombre = input(&quot;Nombre: &quot;)
 n = int(input(&quot;Veces: &quot;))
 for _ in range(n):
     print(nombre)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e10-eco-de-3-palabras">E10. Eco de 3 palabras<a class="headerlink" href="#e10-eco-de-3-palabras" title="Permanent link">&para;</a></h3>
-<p>Lee 3 palabras (una por vez) e imprímelas con el prefijo <code>"Eco:"</code>.</p>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Palabra: hola
+Eco: hola
+Palabra: mundo
+Eco: mundo
+Palabra: python
+Eco: python
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for _ in range(3):
     p = input(&quot;Palabra: &quot;)
     print(&quot;Eco:&quot;, p)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e11-suma-del-1-al-10">E11. Suma del 1 al 10<a class="headerlink" href="#e11-suma-del-1-al-10" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">55
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">s = 0
 for n in range(1, 11):
     s += n
 print(s)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e12-cuadrados-del-1-al-5">E12. Cuadrados del 1 al 5<a class="headerlink" href="#e12-cuadrados-del-1-al-5" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">1
+4
+9
+16
+25
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for n in range(1, 6):
     print(n**2)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e13-indice-y-letra-con-enumerate">E13. Índice y letra con <code>enumerate</code><a class="headerlink" href="#e13-indice-y-letra-con-enumerate" title="Permanent link">&para;</a></h3>
-<p>Muestra el índice (desde 1) y la letra para el texto ingresado.</p>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Texto: Sol
+1 S
+2 o
+3 l
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">texto = input(&quot;Texto: &quot;)
 for i, ch in enumerate(texto, 1):
     print(i, ch)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e14-tabla-de-multiplicar-n-del-1-al-10">E14. Tabla de multiplicar (n del 1 al 10)<a class="headerlink" href="#e14-tabla-de-multiplicar-n-del-1-al-10" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">n: 3
+3 x 1 = 3
+3 x 2 = 6
+...
+3 x 10 = 30
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">n = int(input(&quot;n: &quot;))
 for i in range(1, 11):
     print(f&quot;{n} x {i} = {n*i}&quot;)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e15-suma-del-1-al-100">E15. Suma del 1 al 100<a class="headerlink" href="#e15-suma-del-1-al-100" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">5050
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">s = 0
 for n in range(1, 101):
     s += n
 print(s)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e16-contar-cuantos-pares-hay-entre-1-y-30">E16. Contar cuántos pares hay entre 1 y 30<a class="headerlink" href="#e16-contar-cuantos-pares-hay-entre-1-y-30" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">15
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">cont = 0
 for n in range(1, 31):
     if n % 2 == 0:
         cont += 1
 print(cont)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e17-contar-espacios-en-un-texto">E17. Contar espacios en un texto<a class="headerlink" href="#e17-contar-espacios-en-un-texto" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Texto: hola mundo python
+2
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">t = input(&quot;Texto: &quot;)
 esp = 0
 for ch in t:
@@ -1563,14 +1710,13 @@ for ch in t:
         esp += 1
 print(esp)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e18-solo-vocales-del-texto-ingresado">E18. Solo vocales del texto ingresado<a class="headerlink" href="#e18-solo-vocales-del-texto-ingresado" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Texto: Programar es divertido
+oaaeiuieo
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">t = input(&quot;Texto: &quot;)
 v = &quot;aeiouáéíóúAEIOUÁÉÍÓÚ&quot;
 for ch in t:
@@ -1578,14 +1724,13 @@ for ch in t:
         print(ch, end=&quot;&quot;)
 print()
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e19-contar-vocales-en-el-texto">E19. Contar vocales en el texto<a class="headerlink" href="#e19-contar-vocales-en-el-texto" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Texto: Python
+1
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">t = input(&quot;Texto: &quot;)
 v = &quot;aeiouAEIOUáéíóúÁÉÍÓÚ&quot;
 cnt = 0
@@ -1594,77 +1739,88 @@ for ch in t:
         cnt += 1
 print(cnt)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e20-descendente-101">E20. Descendente 10..1<a class="headerlink" href="#e20-descendente-101" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for n in range(10, 0, -1):
     print(n)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e21-contar-palabras-por-frase">E21. Contar palabras por frase<a class="headerlink" href="#e21-contar-palabras-por-frase" title="Permanent link">&para;</a></h3>
-<p>Para cada frase en <code>["hola mundo","python es genial","me gusta programar"]</code>, imprime cuántas palabras tiene.</p>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">2
+3
+3
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">frases = [&quot;hola mundo&quot;, &quot;python es genial&quot;, &quot;me gusta programar&quot;]
 for f in frases:
     print(len(f.split()))
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e22-promedio-de-5-notas">E22. Promedio de 5 notas<a class="headerlink" href="#e22-promedio-de-5-notas" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Nota 1: 5
+Nota 2: 6
+Nota 3: 4
+Nota 4: 7
+Nota 5: 6
+Promedio: 5.6
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">s = 0
 for i in range(5):
     s += float(input(f&quot;Nota {i+1}: &quot;))
 print(&quot;Promedio:&quot;, s/5)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e23-triangulo-de-estrellas-de-tamano-n">E23. Triángulo de estrellas de tamaño <code>n</code><a class="headerlink" href="#e23-triangulo-de-estrellas-de-tamano-n" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">n: 4
+*
+**
+***
+****
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">n = int(input(&quot;n: &quot;))
 for i in range(1, n+1):
     print(&quot;*&quot; * i)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e24-producto-de-todos-los-numeros-de-1n">E24. Producto de todos los números de 1..n<a class="headerlink" href="#e24-producto-de-todos-los-numeros-de-1n" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">n: 5
+120
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">n = int(input(&quot;n: &quot;))
 prod = 1
 for i in range(1, n+1):
     prod *= i
 print(prod)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e25-suma-hasta-que-se-lea-un-0-usa-break">E25. Suma hasta que se lea un 0 (usa <code>break</code>)<a class="headerlink" href="#e25-suma-hasta-que-se-lea-un-0-usa-break" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Número (0 para terminar): 3
+Número (0 para terminar): 5
+Número (0 para terminar): 0
+Suma: 8
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">suma = 0
 for _ in range(10**6):  # límite alto para permitir muchos ingresos
     x = int(input(&quot;Número (0 para terminar): &quot;))
@@ -1673,14 +1829,12 @@ for _ in range(10**6):  # límite alto para permitir muchos ingresos
     suma += x
 print(&quot;Suma:&quot;, suma)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e26-maximo-en-una-lista-sin-usar-max">E26. Máximo en una lista sin usar <code>max()</code><a class="headerlink" href="#e26-maximo-en-una-lista-sin-usar-max" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">9
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">valores = [3, 7, 2, 9, 5]
 mx = valores[0]
 for v in valores[1:]:
@@ -1688,62 +1842,68 @@ for v in valores[1:]:
         mx = v
 print(mx)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e27-palindromo-igual-al-reves-usando-for">E27. Palíndromo (igual al revés) usando <code>for</code><a class="headerlink" href="#e27-palindromo-igual-al-reves-usando-for" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Texto: radar
+Es palíndromo
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">s = input(&quot;Texto: &quot;)
 inv = &quot;&quot;
 for ch in s:
     inv = ch + inv
 print(&quot;Es palíndromo&quot; if s == inv else &quot;No es palíndromo&quot;)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e28-contar-letras-por-cada-palabra-usa-enumerate">E28. Contar letras por cada palabra (usa <code>enumerate</code>)<a class="headerlink" href="#e28-contar-letras-por-cada-palabra-usa-enumerate" title="Permanent link">&para;</a></h3>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Ejecución (ejemplo):</strong></p>
+<pre><code class="language-text">Frase: hola mundo
+1: hola (4)
+2: mundo (5)
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">palabras = input(&quot;Frase: &quot;).split()
 for i, w in enumerate(palabras, 1):
     print(f&quot;{i}: {w} ({len(w)})&quot;)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e29-combinar-listas-con-zip-y-formar-cadenas">E29. Combinar listas con <code>zip</code> y formar cadenas<a class="headerlink" href="#e29-combinar-listas-con-zip-y-formar-cadenas" title="Permanent link">&para;</a></h3>
-<p>Dadas dos listas <code>nombres = ["Ana","Luis"]</code> y <code>edades = [20, 25]</code>, imprime <code>"Ana (20)"</code>, <code>"Luis (25)"</code>.</p>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">Ana (20)
+Luis (25)
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">nombres = [&quot;Ana&quot;,&quot;Luis&quot;]
 edades = [20,25]
 for nom, edad in zip(nombres, edades):
     print(f&quot;{nom} ({edad})&quot;)
 </code></pre>
-
-</details>
-
 <hr />
 <h3 id="e30-mini-tabla-13-bucles-anidados">E30. Mini tabla 1..3 (bucles anidados)<a class="headerlink" href="#e30-mini-tabla-13-bucles-anidados" title="Permanent link">&para;</a></h3>
-<p>Imprime productos <code>i x j</code> para <code>i,j</code> en 1..3.</p>
-<details><summary>Ver solución</summary>
-
-
+<p><strong>Salida (ejemplo):</strong></p>
+<pre><code class="language-text">1x1=1  1x2=2  1x3=3  
+2x1=2  2x2=4  2x3=6  
+3x1=3  3x2=6  3x3=9  
+</code></pre>
+<p><strong>Código:</strong></p>
 <pre><code class="language-python">for i in range(1, 4):
     for j in range(1, 4):
         print(f&quot;{i}x{j}={i*j}&quot;, end=&quot;  &quot;)
     print()
 </code></pre>
-
-</details>
+<hr />
+<h2 id="notas-sobre-resaltado-colores-de-python">Notas sobre resaltado (colores) de Python<a class="headerlink" href="#notas-sobre-resaltado-colores-de-python" title="Permanent link">&para;</a></h2>
+<ul>
+<li>En materiales <strong>Markdown</strong> (como este), usa bloques con triple tilde y el lenguaje:</li>
+</ul>
+<p><code>```python
+  # tu código aquí</code></p>
+<p>```</p>
+<p>La mayoría de visores (incluido este) agregan <strong>resaltado de sintaxis</strong> automáticamente.
+  <code>``
+* Para **Jupyter Notebooks**, el resaltado es automático en celdas de código.
+* Para **PDF/HTML** personalizados, puedes usar **Pygments** o temas de Markdown (por ejemplo,</code>highlight.js` en sitios estáticos) para controlar los colores.</p>
 
 
 
