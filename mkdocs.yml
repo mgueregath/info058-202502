@@ -1,0 +1,21 @@
+site_name: INFO058 - Programación
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - content.code.copy
+    - content.action.edit
+nav:
+  - Inicio: index.md
+  - 01 · Secuencia simple: 01_secuencia_simple.md
+  - 02 · if / elif / else: 02_if_elif_else.md
+  - 03 · for: 03_for.md
+markdown_extensions:
+  - admonition
+  - footnotes
+  - attr_list
+  - tables
+  - toc:
+      permalink: true

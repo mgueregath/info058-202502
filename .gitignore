@@ -1,0 +1,31 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# ---- Entornos virtuales ----
+.venv/
+venv/
+ENV/
+env/
+.venv*/
+venv*/
+
+# ---- MkDocs ----
+site/
+
+# ---- Archivos de sistema ----
+.DS_Store
+Thumbs.db
+
+# ---- Editores ----
+.vscode/
+.idea/
+
+# ---- Otros ----
+*.log
+*.tmp
