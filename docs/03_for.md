@@ -23,6 +23,14 @@ for variable in secuencia:
 
 * **Ejemplo**: imprimir 3 aplausos
 
+
+**Código:**
+
+```python
+for _ in range(3):
+    print("👏")
+```
+
 **Salida (ejemplo):**
 
 ```text
@@ -31,18 +39,16 @@ for variable in secuencia:
 👏
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-for _ in range(3):
-    print("👏")
-```
-
-</details>
 
 * **Ejemplo**: mostrar índices 0..4
+
+**Código:**
+
+
+```python
+for i in range(5):  # 0,1,2,3,4
+    print("i =", i)
+```
 
 **Salida (ejemplo):**
 
@@ -54,22 +60,20 @@ i = 3
 i = 4
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-for i in range(5):  # 0,1,2,3,4
-    print("i =", i)
-```
-
-</details>
 
 ---
 
 ### 2) `range(inicio, fin, paso)`
 
 * **Ejemplo**: cuenta regresiva de 5 a 1
+
+**Código:**
+
+```python
+for s in range(5, 0, -1):
+    print(s)
+print("¡Despegue! 🚀")
+```
 
 **Salida (ejemplo):**
 
@@ -82,19 +86,15 @@ for i in range(5):  # 0,1,2,3,4
 ¡Despegue! 🚀
 ```
 
+* **Ejemplo**: números pares entre 2 y 10
+
+
 **Código:**
 
-<details><summary><strong>Ver código</strong></summary>
-
 ```python
-for s in range(5, 0, -1):
-    print(s)
-print("¡Despegue! 🚀")
+for n in range(2, 11, 2):
+    print(n)
 ```
-
-</details>
-
-* **Ejemplo**: números pares entre 2 y 10
 
 **Salida (ejemplo):**
 
@@ -106,22 +106,21 @@ print("¡Despegue! 🚀")
 10
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-for n in range(2, 11, 2):
-    print(n)
-```
-
-</details>
-
 ---
 
 ### 3) Recorrer listas
 
+
 * **Ejemplo**: lista de compras
+
+**Código:**
+
+
+```python
+compras = ["pan", "leche", "huevos"]
+for item in compras:
+    print("Comprar:", item)
+```
 
 **Salida (ejemplo):**
 
@@ -131,29 +130,14 @@ Comprar: leche
 Comprar: huevos
 ```
 
-**Código:**
 
-<details><summary><strong>Ver código</strong></summary>
 
-```python
-compras = ["pan", "leche", "huevos"]
-for item in compras:
-    print("Comprar:", item)
-```
-
-</details>
 
 * **Ejemplo**: promedio de calificaciones
 
-**Salida (ejemplo):**
-
-```text
-Promedio: 5.45
-```
 
 **Código:**
 
-<details><summary><strong>Ver código</strong></summary>
 
 ```python
 notas = [5.0, 6.3, 4.8, 5.7]
@@ -163,13 +147,28 @@ for n in notas:
 print("Promedio:", suma/len(notas))
 ```
 
-</details>
+
+**Salida (ejemplo):**
+
+```text
+Promedio: 5.45
+```
 
 ---
 
 ### 4) Recorrer cadenas (strings)
 
 * **Ejemplo**: deletrear un nombre
+
+
+**Código:**
+
+
+```python
+nombre = "Ana"
+for ch in nombre:
+    print(ch)
+```
 
 **Salida (ejemplo):**
 
@@ -179,29 +178,11 @@ n
 a
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-nombre = "Ana"
-for ch in nombre:
-    print(ch)
-```
-
-</details>
 
 * **Ejemplo**: contar dígitos en un texto
 
-**Salida (ejemplo):**
-
-```text
-Dígitos: 4
-```
 
 **Código:**
-
-<details><summary><strong>Ver código</strong></summary>
 
 ```python
 texto = "abc123x9"
@@ -212,13 +193,29 @@ for ch in texto:
 print("Dígitos:", cont)
 ```
 
-</details>
+
+**Salida (ejemplo):**
+
+```text
+Dígitos: 4
+```
 
 ---
 
 ### 5) `enumerate` (índice + valor)
 
 * **Ejemplo**: numerar pasos de una receta
+
+
+**Código:**
+
+
+```python
+pasos = ["Precalentar horno", "Mezclar ingredientes", "Hornear 20 min"]
+for i, paso in enumerate(pasos, start=1):
+    print(f"Paso {i}: {paso}")
+```
+
 
 **Salida (ejemplo):**
 
@@ -228,19 +225,19 @@ Paso 2: Mezclar ingredientes
 Paso 3: Hornear 20 min
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-pasos = ["Precalentar horno", "Mezclar ingredientes", "Hornear 20 min"]
-for i, paso in enumerate(pasos, start=1):
-    print(f"Paso {i}: {paso}")
-```
-
-</details>
 
 * **Ejemplo**: revisar posiciones con validación
+
+
+**Código:**
+
+```python
+valores = [10, -3, 25]
+for idx, v in enumerate(valores):
+    estado = "OK" if v >= 0 else "NEGATIVO"
+    print(idx, v, estado)
+```
+
 
 **Salida (ejemplo):**
 
@@ -250,24 +247,22 @@ for i, paso in enumerate(pasos, start=1):
 2 25 OK
 ```
 
-**Código:**
 
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-valores = [10, -3, 25]
-for idx, v in enumerate(valores):
-    estado = "OK" if v >= 0 else "NEGATIVO"
-    print(idx, v, estado)
-```
-
-</details>
 
 ---
 
 ### 6) `zip` (iterar en paralelo)
 
 * **Ejemplo**: nombres y teléfonos
+
+**Código:**
+
+```python
+nombres = ["Ana", "Luis", "Marta"]
+telefonos = ["111", "222", "333"]
+for nom, tel in zip(nombres, telefonos):
+    print(f"{nom}: {tel}")
+```
 
 **Salida (ejemplo):**
 
@@ -277,30 +272,12 @@ Luis: 222
 Marta: 333
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-nombres = ["Ana", "Luis", "Marta"]
-telefonos = ["111", "222", "333"]
-for nom, tel in zip(nombres, telefonos):
-    print(f"{nom}: {tel}")
-```
-
-</details>
 
 * **Ejemplo**: suma elemento a elemento de dos listas
 
-**Salida (ejemplo):**
-
-```text
-[11, 22, 33]
-```
 
 **Código:**
 
-<details><summary><strong>Ver código</strong></summary>
 
 ```python
 a = [1, 2, 3]
@@ -311,13 +288,25 @@ for x, y in zip(a, b):
 print(c)
 ```
 
-</details>
+**Salida (ejemplo):**
+
+```text
+[11, 22, 33]
+```
 
 ---
 
 ### 7) Diccionarios (`dict.items()`)
 
 * **Ejemplo**: precios por producto
+
+**Código:**
+
+```python
+precios = {"pan": 1200, "leche": 1100, "huevos": 1800}
+for producto, precio in precios.items():
+    print(f"{producto}: ${precio}")
+```
 
 **Salida (ejemplo):**
 
@@ -327,19 +316,17 @@ leche: $1100
 huevos: $1800
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-precios = {"pan": 1200, "leche": 1100, "huevos": 1800}
-for producto, precio in precios.items():
-    print(f"{producto}: ${precio}")
-```
-
-</details>
 
 * **Ejemplo**: formatear reporte clave→valor
+
+**Código:**
+
+
+```python
+cfg = {"host": "localhost", "port": 5432}
+for k, v in cfg.items():
+    print(f"{k} = {v}")
+```
 
 **Salida (ejemplo):**
 
@@ -348,17 +335,6 @@ host = localhost
 port = 5432
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-cfg = {"host": "localhost", "port": 5432}
-for k, v in cfg.items():
-    print(f"{k} = {v}")
-```
-
-</details>
 
 ---
 
@@ -366,15 +342,8 @@ for k, v in cfg.items():
 
 * **Ejemplo**: buscar un producto y **parar** al encontrarlo
 
-**Salida (ejemplo):**
-
-```text
-Encontrado: leche
-```
-
 **Código:**
 
-<details><summary><strong>Ver código</strong></summary>
 
 ```python
 busco = "leche"
@@ -384,21 +353,17 @@ for p in ["pan", "huevos", "leche", "arroz"]:
         break
 ```
 
-</details>
-
-* **Ejemplo**: saltar negativos y procesar solo no negativos
-
 **Salida (ejemplo):**
 
 ```text
-OK: 5
-OK: 0
-OK: 7
+Encontrado: leche
 ```
+
+
+* **Ejemplo**: saltar negativos y procesar solo no negativos
 
 **Código:**
 
-<details><summary><strong>Ver código</strong></summary>
 
 ```python
 datos = [5, -2, 0, 7, -6]
@@ -408,23 +373,23 @@ for d in datos:
     print("OK:", d)
 ```
 
-</details>
+**Salida (ejemplo):**
+
+```text
+OK: 5
+OK: 0
+OK: 7
+```
+
 
 ---
 
 ### 9) `for ... else` (el `else` corre si NO hubo `break`)
 
-* **Ejemplo**: buscar cupón válido
-
-**Salida (ejemplo):**
-
-```text
-Cupón válido: OK-2025
-```
+* **Ejemplo**: buscar cupón válido (un cupón válido comienza con la palabra OK)
 
 **Código:**
 
-<details><summary><strong>Ver código</strong></summary>
 
 ```python
 cupones = ["CAD-2023", "PROMO10", "OK-2025"]
@@ -436,19 +401,18 @@ else:
     print("No se encontró cupón válido")
 ```
 
-</details>
-
-* **Ejemplo**: primalidad muy simple (divisor en 2..n-1)
-
 **Salida (ejemplo):**
 
 ```text
-Primo
+Cupón válido: OK-2025
 ```
+
+
+* **Ejemplo**: primalidad muy simple (divisor en 2..n-1)
+
 
 **Código:**
 
-<details><summary><strong>Ver código</strong></summary>
 
 ```python
 n = 13
@@ -460,13 +424,32 @@ else:
     print("Primo")
 ```
 
-</details>
+
+**Salida (ejemplo):**
+
+```text
+Primo
+```
+
 
 ---
 
 ### 10) Bucles anidados
 
 * **Ejemplo**: mini tabla en la pizarra (1 a 3)
+
+
+**Código:**
+
+
+```python
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(f"{i}x{j}={i*j}", end="  ")
+    print()
+```
+
+
 
 **Salida (ejemplo):**
 
@@ -476,32 +459,11 @@ else:
 3x1=3  3x2=6  3x3=9  
 ```
 
-**Código:**
-
-<details><summary><strong>Ver código</strong></summary>
-
-```python
-for i in range(1, 4):
-    for j in range(1, 4):
-        print(f"{i}x{j}={i*j}", end="  ")
-    print()
-```
-
-</details>
-
 * **Ejemplo**: imprimir matriz identidad 3x3
 
-**Salida (ejemplo):**
-
-```text
-[1, 0, 0]
-[0, 1, 0]
-[0, 0, 1]
-```
 
 **Código:**
 
-<details><summary><strong>Ver código</strong></summary>
 
 ```python
 n = 3
@@ -512,11 +474,19 @@ for i in range(n):
     print(fila)
 ```
 
-</details>
+
+**Salida (ejemplo):**
+
+```text
+[1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+```
+
 
 ---
 
-## Ejercicios (30, dificultad incremental)
+## Ejercicios 
 
 > Para los que **requieren entrada**, incluimos una **ejecución de ejemplo** con datos de muestra.
 
