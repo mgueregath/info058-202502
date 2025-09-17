@@ -33,10 +33,14 @@ for variable in secuencia:
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for _ in range(3):
     print("👏")
 ```
+
+</details>
 
 * **Ejemplo**: mostrar índices 0..4
 
@@ -52,10 +56,14 @@ i = 4
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for i in range(5):  # 0,1,2,3,4
     print("i =", i)
 ```
+
+</details>
 
 ---
 
@@ -76,11 +84,15 @@ for i in range(5):  # 0,1,2,3,4
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for s in range(5, 0, -1):
     print(s)
 print("¡Despegue! 🚀")
 ```
+
+</details>
 
 * **Ejemplo**: números pares entre 2 y 10
 
@@ -96,10 +108,14 @@ print("¡Despegue! 🚀")
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for n in range(2, 11, 2):
     print(n)
 ```
+
+</details>
 
 ---
 
@@ -117,11 +133,15 @@ Comprar: huevos
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 compras = ["pan", "leche", "huevos"]
 for item in compras:
     print("Comprar:", item)
 ```
+
+</details>
 
 * **Ejemplo**: promedio de calificaciones
 
@@ -133,6 +153,8 @@ Promedio: 5.45
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 notas = [5.0, 6.3, 4.8, 5.7]
 suma = 0
@@ -140,6 +162,8 @@ for n in notas:
     suma += n
 print("Promedio:", suma/len(notas))
 ```
+
+</details>
 
 ---
 
@@ -157,11 +181,15 @@ a
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 nombre = "Ana"
 for ch in nombre:
     print(ch)
 ```
+
+</details>
 
 * **Ejemplo**: contar dígitos en un texto
 
@@ -173,6 +201,8 @@ Dígitos: 4
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 texto = "abc123x9"
 cont = 0
@@ -181,6 +211,8 @@ for ch in texto:
         cont += 1
 print("Dígitos:", cont)
 ```
+
+</details>
 
 ---
 
@@ -198,11 +230,15 @@ Paso 3: Hornear 20 min
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 pasos = ["Precalentar horno", "Mezclar ingredientes", "Hornear 20 min"]
 for i, paso in enumerate(pasos, start=1):
     print(f"Paso {i}: {paso}")
 ```
+
+</details>
 
 * **Ejemplo**: revisar posiciones con validación
 
@@ -216,12 +252,16 @@ for i, paso in enumerate(pasos, start=1):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 valores = [10, -3, 25]
 for idx, v in enumerate(valores):
     estado = "OK" if v >= 0 else "NEGATIVO"
     print(idx, v, estado)
 ```
+
+</details>
 
 ---
 
@@ -239,12 +279,16 @@ Marta: 333
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 nombres = ["Ana", "Luis", "Marta"]
 telefonos = ["111", "222", "333"]
 for nom, tel in zip(nombres, telefonos):
     print(f"{nom}: {tel}")
 ```
+
+</details>
 
 * **Ejemplo**: suma elemento a elemento de dos listas
 
@@ -256,6 +300,8 @@ for nom, tel in zip(nombres, telefonos):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 a = [1, 2, 3]
 b = [10, 20, 30]
@@ -264,6 +310,8 @@ for x, y in zip(a, b):
     c.append(x + y)
 print(c)
 ```
+
+</details>
 
 ---
 
@@ -281,11 +329,15 @@ huevos: $1800
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 precios = {"pan": 1200, "leche": 1100, "huevos": 1800}
 for producto, precio in precios.items():
     print(f"{producto}: ${precio}")
 ```
+
+</details>
 
 * **Ejemplo**: formatear reporte clave→valor
 
@@ -298,11 +350,15 @@ port = 5432
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 cfg = {"host": "localhost", "port": 5432}
 for k, v in cfg.items():
     print(f"{k} = {v}")
 ```
+
+</details>
 
 ---
 
@@ -318,6 +374,8 @@ Encontrado: leche
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 busco = "leche"
 for p in ["pan", "huevos", "leche", "arroz"]:
@@ -325,6 +383,8 @@ for p in ["pan", "huevos", "leche", "arroz"]:
         print("Encontrado:", p)
         break
 ```
+
+</details>
 
 * **Ejemplo**: saltar negativos y procesar solo no negativos
 
@@ -338,6 +398,8 @@ OK: 7
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 datos = [5, -2, 0, 7, -6]
 for d in datos:
@@ -345,6 +407,8 @@ for d in datos:
         continue
     print("OK:", d)
 ```
+
+</details>
 
 ---
 
@@ -360,6 +424,8 @@ Cupón válido: OK-2025
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 cupones = ["CAD-2023", "PROMO10", "OK-2025"]
 for c in cupones:
@@ -369,6 +435,8 @@ for c in cupones:
 else:
     print("No se encontró cupón válido")
 ```
+
+</details>
 
 * **Ejemplo**: primalidad muy simple (divisor en 2..n-1)
 
@@ -380,6 +448,8 @@ Primo
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 n = 13
 for d in range(2, n):
@@ -389,6 +459,8 @@ for d in range(2, n):
 else:
     print("Primo")
 ```
+
+</details>
 
 ---
 
@@ -406,12 +478,16 @@ else:
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for i in range(1, 4):
     for j in range(1, 4):
         print(f"{i}x{j}={i*j}", end="  ")
     print()
 ```
+
+</details>
 
 * **Ejemplo**: imprimir matriz identidad 3x3
 
@@ -425,6 +501,8 @@ for i in range(1, 4):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 n = 3
 for i in range(n):
@@ -433,6 +511,8 @@ for i in range(n):
         fila.append(1 if i == j else 0)
     print(fila)
 ```
+
+</details>
 
 ---
 
@@ -454,10 +534,14 @@ Hola
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for _ in range(5):
     print("Hola")
 ```
+
+</details>
 
 ---
 
@@ -475,10 +559,14 @@ for _ in range(5):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for n in range(1, 6):
     print(n)
 ```
+
+</details>
 
 ---
 
@@ -496,10 +584,14 @@ for n in range(1, 6):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for n in range(5):
     print(n)
 ```
+
+</details>
 
 ---
 
@@ -517,10 +609,14 @@ for n in range(5):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for n in range(2, 11, 2):
     print(n)
 ```
+
+</details>
 
 ---
 
@@ -538,10 +634,14 @@ for n in range(2, 11, 2):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for n in range(1, 10, 2):
     print(n)
 ```
+
+</details>
 
 ---
 
@@ -557,11 +657,15 @@ azul
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 colores = ["rojo","verde","azul"]
 for c in colores:
     print(c)
 ```
+
+</details>
 
 ---
 
@@ -579,11 +683,15 @@ a
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 pal = input("Palabra: ")
 for ch in pal:
     print(ch)
 ```
+
+</details>
 
 ---
 
@@ -597,6 +705,8 @@ for ch in pal:
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 nums = [3,7,1,9]
 cont = 0
@@ -604,6 +714,8 @@ for _ in nums:
     cont += 1
 print(cont)
 ```
+
+</details>
 
 ---
 
@@ -621,12 +733,16 @@ Ana
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 nombre = input("Nombre: ")
 n = int(input("Veces: "))
 for _ in range(n):
     print(nombre)
 ```
+
+</details>
 
 ---
 
@@ -645,11 +761,15 @@ Eco: python
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for _ in range(3):
     p = input("Palabra: ")
     print("Eco:", p)
 ```
+
+</details>
 
 ---
 
@@ -663,12 +783,16 @@ for _ in range(3):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 s = 0
 for n in range(1, 11):
     s += n
 print(s)
 ```
+
+</details>
 
 ---
 
@@ -686,10 +810,14 @@ print(s)
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for n in range(1, 6):
     print(n**2)
 ```
+
+</details>
 
 ---
 
@@ -706,11 +834,15 @@ Texto: Sol
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 texto = input("Texto: ")
 for i, ch in enumerate(texto, 1):
     print(i, ch)
 ```
+
+</details>
 
 ---
 
@@ -728,11 +860,15 @@ n: 3
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 n = int(input("n: "))
 for i in range(1, 11):
     print(f"{n} x {i} = {n*i}")
 ```
+
+</details>
 
 ---
 
@@ -746,12 +882,16 @@ for i in range(1, 11):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 s = 0
 for n in range(1, 101):
     s += n
 print(s)
 ```
+
+</details>
 
 ---
 
@@ -765,6 +905,8 @@ print(s)
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 cont = 0
 for n in range(1, 31):
@@ -772,6 +914,8 @@ for n in range(1, 31):
         cont += 1
 print(cont)
 ```
+
+</details>
 
 ---
 
@@ -786,6 +930,8 @@ Texto: hola mundo python
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 t = input("Texto: ")
 esp = 0
@@ -794,6 +940,8 @@ for ch in t:
         esp += 1
 print(esp)
 ```
+
+</details>
 
 ---
 
@@ -808,6 +956,8 @@ oaaeiuieo
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 t = input("Texto: ")
 v = "aeiouáéíóúAEIOUÁÉÍÓÚ"
@@ -816,6 +966,8 @@ for ch in t:
         print(ch, end="")
 print()
 ```
+
+</details>
 
 ---
 
@@ -830,6 +982,8 @@ Texto: Python
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 t = input("Texto: ")
 v = "aeiouAEIOUáéíóúÁÉÍÓÚ"
@@ -839,6 +993,8 @@ for ch in t:
         cnt += 1
 print(cnt)
 ```
+
+</details>
 
 ---
 
@@ -861,10 +1017,14 @@ print(cnt)
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for n in range(10, 0, -1):
     print(n)
 ```
+
+</details>
 
 ---
 
@@ -880,11 +1040,15 @@ for n in range(10, 0, -1):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 frases = ["hola mundo", "python es genial", "me gusta programar"]
 for f in frases:
     print(len(f.split()))
 ```
+
+</details>
 
 ---
 
@@ -903,12 +1067,16 @@ Promedio: 5.6
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 s = 0
 for i in range(5):
     s += float(input(f"Nota {i+1}: "))
 print("Promedio:", s/5)
 ```
+
+</details>
 
 ---
 
@@ -926,11 +1094,15 @@ n: 4
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 n = int(input("n: "))
 for i in range(1, n+1):
     print("*" * i)
 ```
+
+</details>
 
 ---
 
@@ -945,6 +1117,8 @@ n: 5
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 n = int(input("n: "))
 prod = 1
@@ -952,6 +1126,8 @@ for i in range(1, n+1):
     prod *= i
 print(prod)
 ```
+
+</details>
 
 ---
 
@@ -968,6 +1144,8 @@ Suma: 8
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 suma = 0
 for _ in range(10**6):  # límite alto para permitir muchos ingresos
@@ -977,6 +1155,8 @@ for _ in range(10**6):  # límite alto para permitir muchos ingresos
     suma += x
 print("Suma:", suma)
 ```
+
+</details>
 
 ---
 
@@ -990,6 +1170,8 @@ print("Suma:", suma)
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 valores = [3, 7, 2, 9, 5]
 mx = valores[0]
@@ -998,6 +1180,8 @@ for v in valores[1:]:
         mx = v
 print(mx)
 ```
+
+</details>
 
 ---
 
@@ -1012,6 +1196,8 @@ Es palíndromo
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 s = input("Texto: ")
 inv = ""
@@ -1019,6 +1205,8 @@ for ch in s:
     inv = ch + inv
 print("Es palíndromo" if s == inv else "No es palíndromo")
 ```
+
+</details>
 
 ---
 
@@ -1034,11 +1222,15 @@ Frase: hola mundo
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 palabras = input("Frase: ").split()
 for i, w in enumerate(palabras, 1):
     print(f"{i}: {w} ({len(w)})")
 ```
+
+</details>
 
 ---
 
@@ -1053,12 +1245,16 @@ Luis (25)
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 nombres = ["Ana","Luis"]
 edades = [20,25]
 for nom, edad in zip(nombres, edades):
     print(f"{nom} ({edad})")
 ```
+
+</details>
 
 ---
 
@@ -1074,6 +1270,8 @@ for nom, edad in zip(nombres, edades):
 
 **Código:**
 
+<details><summary><strong>Ver código</strong></summary>
+
 ```python
 for i in range(1, 4):
     for j in range(1, 4):
@@ -1081,20 +1279,4 @@ for i in range(1, 4):
     print()
 ```
 
----
-
-## Notas sobre resaltado (colores) de Python
-
-* En materiales **Markdown** (como este), usa bloques con triple tilde y el lenguaje:
-
-  ````
-  ```python
-  # tu código aquí
-  ````
-
-  ```
-
-  La mayoría de visores (incluido este) agregan **resaltado de sintaxis** automáticamente.
-  ```
-* Para **Jupyter Notebooks**, el resaltado es automático en celdas de código.
-* Para **PDF/HTML** personalizados, puedes usar **Pygments** o temas de Markdown (por ejemplo, `highlight.js` en sitios estáticos) para controlar los colores.
+</details>
