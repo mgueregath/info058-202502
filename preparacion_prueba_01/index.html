@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#banco-de-ejercicios" class="md-skip">
+        <a href="#banco-de-ejercicios-completo-con-respuestas-ocultas" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -584,27 +584,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#c1-predecir-salida-10" class="md-nav__link">
+  <a href="#c1-predecir-salida-8" class="md-nav__link">
     <span class="md-ellipsis">
-      C1) Predecir salida (10)
+      C1) Predecir salida (8)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#c2-completar-codigo-10" class="md-nav__link">
+  <a href="#c2-completar-codigo-8" class="md-nav__link">
     <span class="md-ellipsis">
-      C2) Completar código (10)
+      C2) Completar código (8)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#c3-programacion-breve-10" class="md-nav__link">
+  <a href="#c3-programacion-breve-8" class="md-nav__link">
     <span class="md-ellipsis">
-      C3) Programación breve (10)
+      C3) Programación breve (8)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4-alternativas-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      C4) Alternativas (6)
     </span>
   </a>
   
@@ -761,27 +770,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#c1-predecir-salida-10" class="md-nav__link">
+  <a href="#c1-predecir-salida-8" class="md-nav__link">
     <span class="md-ellipsis">
-      C1) Predecir salida (10)
+      C1) Predecir salida (8)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#c2-completar-codigo-10" class="md-nav__link">
+  <a href="#c2-completar-codigo-8" class="md-nav__link">
     <span class="md-ellipsis">
-      C2) Completar código (10)
+      C2) Completar código (8)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#c3-programacion-breve-10" class="md-nav__link">
+  <a href="#c3-programacion-breve-8" class="md-nav__link">
     <span class="md-ellipsis">
-      C3) Programación breve (10)
+      C3) Programación breve (8)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c4-alternativas-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      C4) Alternativas (6)
     </span>
   </a>
   
@@ -840,352 +858,710 @@
   
 
 
-<h1 id="banco-de-ejercicios">Banco de Ejercicios<a class="headerlink" href="#banco-de-ejercicios" title="Permanent link">&para;</a></h1>
+<h1 id="banco-de-ejercicios-completo-con-respuestas-ocultas">Banco de Ejercicios (Completo, con Respuestas Ocultas)<a class="headerlink" href="#banco-de-ejercicios-completo-con-respuestas-ocultas" title="Permanent link">&para;</a></h1>
 <p><strong>Enfoque:</strong> Secuencia simple, <code>if/elif/else</code> (principal) y <code>for</code> (ampliado).<br />
-<strong>Formato estilo evaluación:</strong> V/F, alternativas, completar condición/código y predecir salida. <strong>Sin soluciones</strong>.</p>
+<strong>Formato estilo evaluación:</strong> V/F, alternativas, completar condición/código, predecir salida.<br />
+<strong>Respuestas:</strong> cada ejercicio incluye un bloque desplegable <code>&lt;details&gt;</code> para verificar la solución. <strong>Usa Python 3.</strong></p>
 <blockquote>
-<p>Recomendación: ejecuta cada fragmento en tu editor/IDE y valida tu respuesta con <code>print(...)</code> y casos de prueba.</p>
+<p>Recomendación: intenta resolver <strong>sin ver</strong> la respuesta. Luego expande <code>&lt;details&gt;</code> para autoverificar.</p>
 </blockquote>
 <hr />
 <h2 id="parte-a-secuencia-simple-12">Parte A · Secuencia simple (12)<a class="headerlink" href="#parte-a-secuencia-simple-12" title="Permanent link">&para;</a></h2>
-<p>Ejercicios introductorios de entrada → procesamiento → salida. <strong>No usar <code>if</code> ni <code>for</code></strong>.</p>
-<p>A1. Solicita un nombre y muestra <code>Hola, &lt;nombre&gt;!</code><br />
-A2. Lee dos enteros y muestra su suma.<br />
-A3. Ingresa base y altura de un rectángulo; muestra el área con 2 decimales.<br />
-A4. Convierte °C a °F y muestra con formato <code>f"{f:,.2f}"</code>.<br />
-A5. Pide distancia (km) y tiempo (h); muestra velocidad media (km/h).<br />
-A6. Ingresa precio neto y % IVA; muestra precio bruto.<br />
-A7. Pide un número real y muestra su parte entera y su parte decimal.<br />
-A8. Convierte tiempo total en <strong>minutos</strong> a <code>h</code> y <code>min</code> usando // y %.<br />
-A9. Calcula IMC = peso/(altura^2) y muéstralo con 2 decimales.<br />
-A10. Pide monto en MB y muestra KB y bytes (base 1024).<br />
-A11. Dado un número (ms por frame), aproxima fps = 1000/ms.<br />
-A12. Dado un ángulo en grados, conviértelo a radianes.</p>
+<p>Ejercicios introductorios <strong>sin</strong> usar <code>if</code> ni <code>for</code>. Incluyen <strong>código base</strong> para que pegues y pruebes.</p>
+<p>A1. <strong>Saludo simple</strong> – Solicita un nombre y muestra <code>Hola, &lt;nombre&gt;!</code>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Nombre: &quot;</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Imprime el saludo con el nombre ingresado.</details>
+
+<p>A2. <strong>Suma de enteros</strong> – Lee dos enteros y muestra su suma.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;A: &quot;</span><span class="p">))</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">b</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;B: &quot;</span><span class="p">))</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Salida = A + B.</details>
+
+<p>A3. <strong>Área de rectángulo</strong> – Ingresa base y altura; muestra el área con 2 decimales.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">base</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Base: &quot;</span><span class="p">))</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">altura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Altura: &quot;</span><span class="p">))</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">area</span> <span class="o">=</span> <span class="n">base</span> <span class="o">*</span> <span class="n">altura</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">area</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Área = base × altura.</details>
+
+<p>A4. <strong>°C → °F</strong> – Convierte °C a °F.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">c</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;°C: &quot;</span><span class="p">))</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">f</span> <span class="o">=</span> <span class="n">c</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">f</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Fórmula: F = C×9/5 + 32.</details>
+
+<p>A5. <strong>Velocidad media</strong> – Pide distancia (km) y tiempo (h); muestra km/h.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">km</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Km: &quot;</span><span class="p">))</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">h</span>  <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Horas: &quot;</span><span class="p">))</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">vm</span> <span class="o">=</span> <span class="n">km</span> <span class="o">/</span> <span class="n">h</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">vm</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> km/h&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Velocidad = km / h.</details>
+
+<p>A6. <strong>Neto→Bruto</strong> – Ingresa neto y %IVA; muestra el precio bruto.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">neto</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Neto: &quot;</span><span class="p">))</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">iva</span>  <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;% IVA: &quot;</span><span class="p">))</span> <span class="o">/</span> <span class="mi">100</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">bruto</span> <span class="o">=</span> <span class="n">neto</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">iva</span><span class="p">)</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">bruto</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Bruto = neto × (1 + IVA/100).</details>
+
+<p>A7. <strong>Entera y decimal</strong> – Pide un real y muestra su parte entera y decimal.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">ent</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">dec</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="n">ent</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">ent</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">dec</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Muestra parte entera y fracción (aprox.).</details>
+
+<p>A8. <strong>Minutos → h:min</strong> – Convierte minutos a horas y minutos.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">m</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Minutos: &quot;</span><span class="p">))</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">h</span> <span class="o">=</span> <span class="n">m</span> <span class="o">//</span> <span class="mi">60</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">r</span> <span class="o">=</span> <span class="n">m</span> <span class="o">%</span> <span class="mi">60</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">h</span><span class="si">}</span><span class="s2"> h </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2"> min&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Usa división entera y módulo.</details>
+
+<p>A9. <strong>IMC</strong> – IMC = peso/(altura^2), 2 decimales.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">peso</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Peso (kg): &quot;</span><span class="p">))</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">alt</span>  <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Altura (m): &quot;</span><span class="p">))</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">imc</span> <span class="o">=</span> <span class="n">peso</span> <span class="o">/</span> <span class="p">(</span><span class="n">alt</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">imc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Muestra IMC con dos decimales.</details>
+
+<p>A10. <strong>MB→KB→bytes</strong> (base 1024)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">mb</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;MB: &quot;</span><span class="p">))</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">kb</span> <span class="o">=</span> <span class="n">mb</span> <span class="o">*</span> <span class="mi">1024</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">by</span> <span class="o">=</span> <span class="n">kb</span> <span class="o">*</span> <span class="mi">1024</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">kb</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> KB  </span><span class="si">{</span><span class="nb">int</span><span class="p">(</span><span class="n">by</span><span class="p">)</span><span class="si">}</span><span class="s2"> bytes&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>1 MB = 1024 KB; 1 KB = 1024 bytes.</details>
+
+<p>A11. <strong>ms/frame → fps</strong> – fps ≈ 1000/ms.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">ms</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;ms por frame: &quot;</span><span class="p">))</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">fps</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">/</span> <span class="n">ms</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">fps</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> fps&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="err">``</span><span class="o">&gt;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="o">&lt;</span><span class="n">details</span><span class="o">&gt;&lt;</span><span class="n">summary</span><span class="o">&gt;</span><span class="n">Ver</span> <span class="n">respuesta</span><span class="o">&lt;/</span><span class="n">summary</span><span class="o">&gt;</span><span class="n">fps</span> <span class="o">=</span> <span class="mi">1000</span> <span class="o">/</span> <span class="n">ms</span><span class="o">.&lt;/</span><span class="n">details</span><span class="o">&gt;</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="n">A12</span><span class="o">.</span> <span class="o">**</span><span class="n">Grados</span> <span class="err">→</span> <span class="n">radianes</span><span class="o">**</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="err">```</span><span class="n">python</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="n">pi</span> <span class="o">=</span> <span class="mf">3.141592653589793</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="n">deg</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;°: &quot;</span><span class="p">))</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="n">rad</span> <span class="o">=</span> <span class="n">deg</span> <span class="o">*</span> <span class="n">pi</span> <span class="o">/</span> <span class="mi">180</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">rad</span><span class="si">:</span><span class="s2">.6f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>rad = deg × π/180.</details>
+
 <hr />
 <h2 id="parte-b-seleccion-if-elif-else-63">Parte B · Selección (if / elif / else) (63)<a class="headerlink" href="#parte-b-seleccion-if-elif-else-63" title="Permanent link">&para;</a></h2>
-<p><strong>Énfasis total en condicionales</strong>, estilo de control/prueba: V/F, alternativas, predecir salida y completar código.</p>
+<p>Énfasis en condiciones, rangos y composición lógica.</p>
 <h3 id="b1-verdaderofalso-10">B1) Verdadero/Falso (10)<a class="headerlink" href="#b1-verdaderofalso-10" title="Permanent link">&para;</a></h3>
-<p>Indica V o F sin ejecutar:
-B1.1. <code>==</code> compara igualdad y <code>=</code> asigna.<br />
-B1.2. <code>!=</code> es “distinto de”.<br />
-B1.3. <code>if</code> ejecuta un bloque cuando la condición es verdadera.<br />
-B1.4. <code>elif</code> es “sino si”; se evalúa solo si el <code>if</code> falló.<br />
-B1.5. <code>else</code> no lleva condición.<br />
-B1.6. En <code>if x % 2 == 0:</code>, la condición es verdadera si x es par.<br />
-B1.7. <code>and</code> requiere que ambas condiciones sean verdaderas.<br />
-B1.8. <code>or</code> requiere al menos una verdadera.<br />
-B1.9. En Python, los bloques se definen por <strong>indentación</strong>.<br />
-B1.10. <code>if x:</code> es verdadero si <code>x != 0</code> para enteros.</p>
+<p>B1.1. <code>==</code> compara igualdad y <code>=</code> asigna.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
+<p>B1.2. <code>!=</code> es “distinto de”.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
+<p>B1.3. <code>if</code> ejecuta un bloque cuando la condición es verdadera.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
+<p>B1.4. <code>elif</code> se evalúa solo si el <code>if</code> fue falso.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
+<p>B1.5. <code>else</code> lleva condición.  </p>
+<details><summary>Ver respuesta</summary>F</details>
+
+<p>B1.6. <code>if x % 2 == 0:</code> es verdadero si x es par.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
+<p>B1.7. <code>and</code> exige ambas verdaderas.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
+<p>B1.8. <code>or</code> exige al menos una verdadera.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
+<p>B1.9. En Python, los bloques se definen por indentación.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
+<p>B1.10. <code>if x:</code> con x entero es falso si x == 0.  </p>
+<details><summary>Ver respuesta</summary>V</details>
+
 <h3 id="b2-alternativas-12">B2) Alternativas (12)<a class="headerlink" href="#b2-alternativas-12" title="Permanent link">&para;</a></h3>
-<p>Marca la correcta.
-B2.1. ¿Qué imprime?
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+<p>B2.1. ¿Qué imprime?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
 </code></pre></div>
-a) A  b) B  c) Nada  d) Error</p>
-<p>B2.2. ¿Cuál condición detecta número <strong>negativo</strong>?<br />
-a) <code>x &gt; 0</code>  b) <code>x == 0</code>  c) <code>x &lt; 0</code>  d) <code>x &lt;= 0</code></p>
-<p>B2.3. ¿Qué operador es <strong>división entera</strong>?<br />
-a) <code>/</code>  b) <code>//</code>  c) <code>%</code>  d) <code>**</code></p>
-<p>B2.4. Si <code>x = 6</code>, ¿qué imprime?
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Par&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impar&quot;</span><span class="p">)</span>
+a) A  b) B  c) Nada  d) Error  </p>
+<details><summary>Ver respuesta</summary>a)</details>
+
+<p>B2.2. Detección de <strong>negativo</strong>:<br />
+a) <code>x &gt; 0</code>  b) <code>x == 0</code>  c) <code>x &lt; 0</code>  d) <code>x &lt;= 0</code>  </p>
+<details><summary>Ver respuesta</summary>c)</details>
+
+<p>B2.3. División entera:<br />
+a) <code>/</code>  b) <code>//</code>  c) <code>%</code>  d) <code>**</code>  </p>
+<details><summary>Ver respuesta</summary>b)</details>
+
+<p>B2.4. Si <code>x = 6</code>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Par&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impar&quot;</span><span class="p">)</span>
 </code></pre></div>
-a) Par  b) Impar  c) Nada  d) Error</p>
-<p>B2.5. Para “Niño (&lt;12), Adolescente (12–17), Adulto (&gt;=18)”, ¿qué va primero?<br />
-a) <code>x &gt;= 18</code>  b) <code>x &lt; 12</code>  c) <code>x &lt;= 17</code>  d) <code>x == 12</code></p>
-<p>B2.6. Completa para detectar múltiplos de 3: <code>if ________: print("M3")</code><br />
-a) <code>x // 3 == 0</code>  b) <code>x % 3 == 0</code>  c) <code>x / 3 == 0</code>  d) <code>x * 3 == 0</code></p>
+a) Par  b) Impar  c) Nada  d) Error  </p>
+<details><summary>Ver respuesta</summary>a)</details>
+
+<p>B2.5. Orden correcto para “Niño (&lt;12), Adolescente (12–17), Adulto (&gt;=18)”: ¿qué va primero?<br />
+a) <code>x &gt;= 18</code>  b) <code>x &lt; 12</code>  c) <code>x &lt;= 17</code>  d) <code>x == 12</code>  </p>
+<details><summary>Ver respuesta</summary>b) (primero el caso más restrictivo del extremo inferior)</details>
+
+<p>B2.6. Múltiplos de 3 → <code>if ________: print("M3")</code><br />
+a) <code>x // 3 == 0</code>  b) <code>x % 3 == 0</code>  c) <code>x / 3 == 0</code>  d) <code>x * 3 == 0</code>  </p>
+<details><summary>Ver respuesta</summary>b)</details>
+
 <p>B2.7. ¿Qué imprime?
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Y&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Z&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Y&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Z&quot;</span><span class="p">)</span>
 </code></pre></div>
-a) X  b) Y  c) Z  d) Nada</p>
-<p>B2.8. ¿Qué operador <strong>niega</strong> una condición?<br />
-a) <code>and</code>  b) <code>or</code>  c) <code>not</code>  d) <code>!=</code></p>
+a) X  b) Y  c) Z  d) Nada  </p>
+<details><summary>Ver respuesta</summary>c)</details>
+
+<p>B2.8. Operador de negación:<br />
+a) <code>and</code>  b) <code>or</code>  c) <code>not</code>  d) <code>!=</code>  </p>
+<details><summary>Ver respuesta</summary>c)</details>
+
 <p>B2.9. ¿Qué imprime?
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">if</span> <span class="n">x</span><span class="p">:</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;T&quot;</span><span class="p">)</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;F&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">if</span> <span class="n">x</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;T&quot;</span><span class="p">)</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;F&quot;</span><span class="p">)</span>
 </code></pre></div>
-a) T  b) F  c) Nada  d) Error</p>
+a) T  b) F  c) Nada  d) Error  </p>
+<details><summary>Ver respuesta</summary>b)</details>
+
 <p>B2.10. Mejor orden para rangos:<br />
-a) <code>if x &gt;= 0 ... elif x &gt; 10 ...</code><br />
-b) <code>if x &gt; 10 ... elif x &gt;= 0 ...</code><br />
+a) <code>if x &gt; 10 ... elif x &gt;= 0 ...</code><br />
+b) <code>if x &gt;= 0 ... elif x &gt; 10 ...</code><br />
 c) Depende del problema<br />
-d) Siempre al revés</p>
-<p>B2.11. ¿Cuál detecta <strong>no par</strong>?<br />
-a) <code>x % 2 == 0</code>  b) <code>x % 2 != 0</code>  c) <code>x // 2 != 0</code>  d) <code>not x</code></p>
+d) Siempre al revés  </p>
+<details><summary>Ver respuesta</summary>c) (que no se solapen, de específico a general)</details>
+
+<p>B2.11. Detectar <strong>no par</strong>:<br />
+a) <code>x % 2 == 0</code>  b) <code>x % 2 != 0</code>  c) <code>x // 2 != 0</code>  d) <code>not x</code>  </p>
+<details><summary>Ver respuesta</summary>b)</details>
+
 <p>B2.12. ¿Qué imprime?
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;world&quot;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Iguales&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Distintas&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="s2">&quot;world&quot;</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Iguales&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Distintas&quot;</span><span class="p">)</span>
 </code></pre></div>
-a) Iguales  b) Distintas  c) Nada  d) Error</p>
+a) Iguales  b) Distintas  c) Nada  d) Error  </p>
+<details><summary>Ver respuesta</summary>b)</details>
+
 <h3 id="b3-predecir-salida-15">B3) Predecir salida (15)<a class="headerlink" href="#b3-predecir-salida-15" title="Permanent link">&para;</a></h3>
-<p>Indica <strong>exactamente</strong> qué se imprime.
-B3.1.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Naranja&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pera&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Manzana&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.2.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">7</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Día&quot;</span><span class="p">)</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Noche&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.3.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="n">z</span><span class="p">:</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="k">if</span> <span class="n">z</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x &lt; z &lt; y&quot;</span><span class="p">)</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="k">elif</span> <span class="n">z</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;z &lt; x &lt; y&quot;</span><span class="p">)</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x == z &lt; y&quot;</span><span class="p">)</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No se cumple&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.4.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">if</span> <span class="n">n</span><span class="p">:</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.5.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Largo&quot;</span><span class="p">)</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Corto&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.6.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mayor&quot;</span><span class="p">)</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="k">elif</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menor&quot;</span><span class="p">)</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Iguales&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.7.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Negativo&quot;</span><span class="p">)</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Par&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.8.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">12</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;M12&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;M3&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Otro&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.9.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">15</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">%</span> <span class="mi">5</span><span class="p">):</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;M5&quot;</span><span class="p">)</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No M5&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.10.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">9</span>
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&gt;10&quot;</span><span class="p">)</span>
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&gt;5&quot;</span><span class="p">)</span>
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fin&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.11.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">18</span>
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adulto&quot;</span><span class="p">)</span>
-<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">12</span><span class="p">:</span>
-<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adolescente&quot;</span><span class="p">)</span>
-<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Niño&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.12.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">12</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ParM3&quot;</span><span class="p">)</span>
+<p>B3.1.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Naranja&quot;</span><span class="p">)</span>
 <a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Par&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Pera&quot;</span><span class="p">)</span>
 <a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impar&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.13.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Negativo&quot;</span><span class="p">)</span>
-<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
-<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menor10&quot;</span><span class="p">)</span>
-<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
-<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menor20&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.14.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
-<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">)</span>
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NO&quot;</span><span class="p">)</span>
-</code></pre></div>
-B3.15.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
-<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
-<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Manzana&quot;</span><span class="p">)</span>
 </code></pre></div></p>
+<details><summary>Ver respuesta</summary>Pera</details>
+
+<p>B3.2.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">7</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Día&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Noche&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Noche</details>
+
+<p>B3.3.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="n">z</span><span class="p">:</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="k">if</span> <span class="n">z</span> <span class="o">&gt;</span> <span class="n">x</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x &lt; z &lt; y&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="k">elif</span> <span class="n">z</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;z &lt; x &lt; y&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    <span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x == z &lt; y&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No se cumple&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>x &lt; z &lt; y</details>
+
+<p>B3.4.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="k">if</span> <span class="n">n</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>B</details>
+
+<p>B3.5.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Largo&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Corto&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Largo</details>
+
+<p>B3.6.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mayor&quot;</span><span class="p">)</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">elif</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menor&quot;</span><span class="p">)</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Iguales&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Iguales</details>
+
+<p>B3.7.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Negativo&quot;</span><span class="p">)</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Par&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Negativo</details>
+
+<p>B3.8.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">12</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;M12&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;M3&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Otro&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>M12</details>
+
+<p>B3.9.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">15</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">x</span> <span class="o">%</span> <span class="mi">5</span><span class="p">):</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;M5&quot;</span><span class="p">)</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No M5&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>M5</details>
+
+<p>B3.10.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">9</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&gt;10&quot;</span><span class="p">)</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&gt;5&quot;</span><span class="p">)</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fin&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>&gt;5⏎Fin</details>
+
+<p>B3.11.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">18</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adulto&quot;</span><span class="p">)</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">12</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adolescente&quot;</span><span class="p">)</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Niño&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Adulto</details>
+
+<p>B3.12.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">12</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ParM3&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Par&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impar&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>ParM3</details>
+
+<p>B3.13.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Negativo&quot;</span><span class="p">)</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menor10&quot;</span><span class="p">)</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menor20&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>Menor10</details>
+
+<p>B3.14.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">3</span> <span class="ow">or</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">)</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NO&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>OK</details>
+
+<p>B3.15.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>B</details>
+
 <h3 id="b4-completar-condicioncodigo-14">B4) Completar condición/código (14)<a class="headerlink" href="#b4-completar-condicioncodigo-14" title="Permanent link">&para;</a></h3>
-<p>Completa <code>_____</code> para que cumpla el enunciado.
-B4.1. Imprimir “Negativo” si <code>n</code> es menor que 0: <code>if _____: print("Negativo")</code><br />
-B4.2. “Par” si divisible por 2, si no “Impar”.<br />
-B4.3. “M3 y M5” si múltiplo de 3 <strong>y</strong> de 5; si no, “Otro”.<br />
-B4.4. Clasificar edad: <code>&lt;12: Niño</code>, <code>12–17: Adolescente</code>, <code>&gt;=18: Adulto</code>.<br />
-B4.5. Dado <code>nota</code> (1.0–7.0): <code>&gt;=6.0 Excelente</code>, <code>&gt;=4.0 Aprobado</code>, otro <code>Reprobado</code>.<br />
-B4.6. Si <code>x</code> está <strong>en [10, 20]</strong> muestra “Rango”; si no, “Fuera”.<br />
-B4.7. Si <code>a == b</code> y <code>b == c</code> muestra “Tri-Iso”; si no, “Otro”.<br />
-B4.8. Leer tres números y mostrar el <strong>mayor</strong> (usa if/elif/else).<br />
-B4.9. Indicar si un año es <strong>bisiesto</strong> (simplificado: divisible por 4).<br />
-B4.10. Si <code>prom &gt;= 5.5</code> imprime “Beca”, si <code>prom &gt;= 4.0</code> “Regular”, si no “Reprobado”.<br />
-B4.11. Dado <code>x</code> real, si <code>x == 0</code> imprime “Cero”; si <code>x &gt; 0</code> “Positivo”; si no “Negativo”.<br />
-B4.12. Si <code>clave</code> es “python123” imprime “OK”; si no, “DENEGADO”.<br />
-B4.13. Si <code>n</code> en {1,3,5,7,9} muestra “Impar chico”; si en {2,4,6,8} “Par chico”; otro “Otro”.<br />
-B4.14. Lee dos horas (0–23) y di si están en el <strong>mismo turno</strong>: <code>mañana [6–11]</code>, <code>tarde [12–19]</code>, <code>noche [20–5]</code>.</p>
+<p>B4.1. “Negativo” si <code>n</code> es menor que 0.  </p>
+<details><summary>Ver respuesta</summary>`if n < 0: print("Negativo")`</details>
+
+<p>B4.2. “Par” si divisible por 2, si no “Impar”.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Par&quot;</span><span class="p">)</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impar&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>B4.3. “M3 y M5” si múltiplo de 3 y 5; otro “Otro”.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;M3 y M5&quot;</span><span class="p">)</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Otro&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>B4.4. Edad → <code>&lt;12: Niño</code>, <code>12–17: Adolescente</code>, <code>&gt;=18: Adulto</code>.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">if</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Niño&quot;</span><span class="p">)</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="k">elif</span> <span class="n">edad</span> <span class="o">&lt;=</span> <span class="mi">17</span><span class="p">:</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adolescente&quot;</span><span class="p">)</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adulto&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>B4.5. Nota (1.0–7.0): <code>&gt;=6.0 Excelente</code>, <code>&gt;=4.0 Aprobado</code>, otro <code>Reprobado</code>.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">if</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mf">6.0</span><span class="p">:</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Excelente&quot;</span><span class="p">)</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="k">elif</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mf">4.0</span><span class="p">:</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Aprobado&quot;</span><span class="p">)</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reprobado&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>B4.6. Si <code>x</code> en [10, 20] → “Rango”; otro “Fuera”.  </p>
+<details><summary>Ver respuesta</summary>`if 10 <= x <= 20: print("Rango") else: print("Fuera")`</details>
+
+<p>B4.7. Triángulo isósceles si <code>a == b</code> y <code>b == c</code>.  </p>
+<details><summary>Ver respuesta</summary>`if a == b == c: print("Tri-Iso") else: print("Otro")` *(nota: eso es equilátero; si querías isósceles: `a==b or a==c or b==c`)*</details>
+
+<p>B4.8. Leer tres números y mostrar el <strong>mayor</strong>.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">a</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">());</span> <span class="n">b</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">());</span> <span class="n">c</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="k">if</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span> <span class="ow">and</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">c</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a><span class="k">elif</span> <span class="n">b</span> <span class="o">&gt;=</span> <span class="n">a</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;=</span> <span class="n">c</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>B4.9. Año bisiesto (simplificado: divisible por 4).  </p>
+<details><summary>Ver respuesta</summary>`if anio % 4 == 0: print("Bisiesto") else: print("No")`</details>
+
+<p>B4.10. <code>prom &gt;= 5.5 → "Beca"</code>, <code>&gt;=4.0 → "Regular"</code>, otro <code>"Reprobado"</code>.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="k">if</span> <span class="n">prom</span> <span class="o">&gt;=</span> <span class="mf">5.5</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Beca&quot;</span><span class="p">)</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="k">elif</span> <span class="n">prom</span> <span class="o">&gt;=</span> <span class="mf">4.0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Regular&quot;</span><span class="p">)</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reprobado&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>B4.11. <code>x == 0 → "Cero"</code>, <code>x &gt; 0 → "Positivo"</code>, otro <code>"Negativo"</code>.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cero&quot;</span><span class="p">)</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Positivo&quot;</span><span class="p">)</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Negativo&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>B4.12. Clave “python123” → OK; otro DENEGADO.  </p>
+<details><summary>Ver respuesta</summary>`print("OK" if clave == "python123" else "DENEGADO")`</details>
+
+<p>B4.13. <code>n</code> en {1,3,5,7,9} → “Impar chico”; en {2,4,6,8} “Par chico”; otro “Otro”.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">}:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impar chico&quot;</span><span class="p">)</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="k">elif</span> <span class="n">n</span> <span class="ow">in</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">}:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Par chico&quot;</span><span class="p">)</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="k">else</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Otro&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>B4.14. Dos horas (0–23) en <strong>mismo turno</strong>: mañana [6–11], tarde [12–19], noche [20–5].  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">turno</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>    <span class="k">if</span> <span class="mi">6</span> <span class="o">&lt;=</span> <span class="n">h</span> <span class="o">&lt;=</span> <span class="mi">11</span><span class="p">:</span> <span class="k">return</span> <span class="s2">&quot;mañana&quot;</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>    <span class="k">if</span> <span class="mi">12</span> <span class="o">&lt;=</span> <span class="n">h</span> <span class="o">&lt;=</span> <span class="mi">19</span><span class="p">:</span> <span class="k">return</span> <span class="s2">&quot;tarde&quot;</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>    <span class="k">return</span> <span class="s2">&quot;noche&quot;</span>  <span class="c1"># 20..23 o 0..5</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mismo&quot;</span> <span class="k">if</span> <span class="n">turno</span><span class="p">(</span><span class="n">h1</span><span class="p">)</span> <span class="o">==</span> <span class="n">turno</span><span class="p">(</span><span class="n">h2</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;Distinto&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
 <h3 id="b5-programacion-breve-12">B5) Programación breve (12)<a class="headerlink" href="#b5-programacion-breve-12" title="Permanent link">&para;</a></h3>
-<p>Escribe un programa para cada enunciado.
-B5.1. Lee un entero y muestra si es <strong>positivo, negativo o cero</strong>.<br />
-B5.2. Lee un entero y muestra si es <strong>par o impar</strong>.<br />
-B5.3. Lee dos enteros y muestra <strong>el mayor</strong> o “iguales”.<br />
-B5.4. Lee tres enteros y muestra <strong>el menor</strong>.<br />
-B5.5. Dado un puntaje 0–100, mapea a 1.0–7.0 (lineal) y clasifica “aprobado” si ≥4.0.<br />
-B5.6. Dado un precio y un cupón (<code>"DESC10"</code>, <code>"DESC20"</code>), aplica 10% o 20%; otro: 0%.<br />
-B5.7. Calcula tarifa según edad: <code>&lt;12: $1000</code>, <code>12–65: $2000</code>, <code>&gt;65: $1500</code>.<br />
-B5.8. Calcula costo de envío: <code>&lt;1kg: $2.000</code>, <code>1–5kg: $4.000</code>, <code>&gt;5kg: $7.000</code>.<br />
-B5.9. Clasifica temperatura (°C): <code>&lt;0: “Bajo cero”</code>, <code>0–30: “Normal”</code>, <code>&gt;30: “Calor”</code>.<br />
-B5.10. Determina tipo de triángulo por lados: equilátero, isósceles, escaleno.<br />
-B5.11. Verifica acceso por <strong>usuario/clave</strong> (valores fijos).<br />
-B5.12. Simula semáforo: lee color (<code>"rojo"|"amarillo"|"verde"</code>) y muestra acción.</p>
+<p>B5.1. Entero → <strong>positivo/negativo/cero</strong>.  </p>
+<details><summary>Ver respuesta</summary>Usa `if/elif/else` comparando con 0.</details>
+
+<p>B5.2. Entero → <strong>par/impar</strong>.  </p>
+<details><summary>Ver respuesta</summary>`print("par" if n % 2 == 0 else "impar")`</details>
+
+<p>B5.3. Dos enteros → <strong>mayor</strong> o “iguales”.  </p>
+<details><summary>Ver respuesta</summary>Compara `a` vs `b` con `>` y `==`.</details>
+
+<p>B5.4. Tres enteros → <strong>menor</strong>.  </p>
+<details><summary>Ver respuesta</summary>Encadena comparaciones o usa variables auxiliares.</details>
+
+<p>B5.5. Puntaje 0–100 → 1.0–7.0 lineal + “aprobado” si ≥4.0.  </p>
+<details><summary>Ver respuesta</summary>`nota = 1 + (p/100)*6; print("aprobado" if nota>=4 else "reprobado")`</details>
+
+<p>B5.6. Precio + cupón <code>"DESC10"|"DESC20"</code> → aplica % o 0%.  </p>
+<details><summary>Ver respuesta</summary>Normaliza cupón y aplica `precio*(1-desc)`.</details>
+
+<p>B5.7. Tarifa por edad: <code>&lt;12:$1000</code>, <code>12–65:$2000</code>, <code>&gt;65:$1500</code>.  </p>
+<details><summary>Ver respuesta</summary>Usa `if edad < 12 ... elif edad <= 65 ... else ...`</details>
+
+<p>B5.8. Envío por peso: <code>&lt;1kg:$2000</code>, <code>1–5:$4000</code>, <code>&gt;5:$7000</code>.  </p>
+<details><summary>Ver respuesta</summary>Encadena `if/elif/else` por rangos.</details>
+
+<p>B5.9. Temperatura: <code>&lt;0 "Bajo cero"</code>, <code>0–30 "Normal"</code>, <code>&gt;30 "Calor"</code>.  </p>
+<details><summary>Ver respuesta</summary>Atiende el límite 0/30 con `<=`.</details>
+
+<p>B5.10. Tipo de triángulo por lados.  </p>
+<details><summary>Ver respuesta</summary>Equilátero si `a==b==c`; isósceles si `a==b or a==c or b==c`; si no, escaleno.</details>
+
+<p>B5.11. Verifica usuario/clave (valores fijos).  </p>
+<details><summary>Ver respuesta</summary>Compara cadenas con `==`; cuida mayúsculas/minúsculas.</details>
+
+<p>B5.12. Semáforo: <code>"rojo"|"amarillo"|"verde"</code> → acción.  </p>
+<details><summary>Ver respuesta</summary>Normaliza con `.lower()` y usa `if/elif/else`.</details>
+
 <hr />
 <h2 id="parte-c-bucle-for-30">Parte C · Bucle for (30)<a class="headerlink" href="#parte-c-bucle-for-30" title="Permanent link">&para;</a></h2>
-<p>Iteraciones sobre rangos/listas; contadores y acumuladores simples.</p>
-<h3 id="c1-predecir-salida-10">C1) Predecir salida (10)<a class="headerlink" href="#c1-predecir-salida-10" title="Permanent link">&para;</a></h3>
+<p>Incluye <strong>alternativas</strong> además de predecir salida, completar código y programación.</p>
+<blockquote>
+<p>Distribución: C1 (8), C2 (8), C3 (8), C4 (6) = 30.</p>
+</blockquote>
+<h3 id="c1-predecir-salida-8">C1) Predecir salida (8)<a class="headerlink" href="#c1-predecir-salida-8" title="Permanent link">&para;</a></h3>
 <p>C1.1.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
-C1.2.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
-<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
-</code></pre></div>
-C1.3.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]:</span>
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="n">x</span>
-<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-</code></pre></div>
-C1.4.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
-<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
-C1.5.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>
-<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
-<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>    <span class="n">p</span> <span class="o">*=</span> <span class="n">x</span>
-<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
-</code></pre></div>
-C1.6.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;ABC&quot;</span><span class="p">:</span>
-<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>    <span class="n">out</span> <span class="o">+=</span> <span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
-</code></pre></div>
-C1.7.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]:</span>
-<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>        <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
-<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
-</code></pre></div>
-C1.8.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
-<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
-C1.9.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
-<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
-<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="n">i</span>
-<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-</code></pre></div>
-C1.10.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </code></pre></div></p>
-<h3 id="c2-completar-codigo-10">C2) Completar código (10)<a class="headerlink" href="#c2-completar-codigo-10" title="Permanent link">&para;</a></h3>
+<details><summary>Ver respuesta</summary>0⏎1⏎2</details>
+
+<p>C1.2.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>2-3-4-5-</details>
+
+<p>C1.3.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">]:</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="n">x</span>
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>8</details>
+
+<p>C1.4.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>5⏎3⏎1</details>
+
+<p>C1.5.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="n">p</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>    <span class="n">p</span> <span class="o">*=</span> <span class="n">x</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>12</details>
+
+<p>C1.6.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;ABC&quot;</span><span class="p">:</span>
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>    <span class="n">out</span> <span class="o">+=</span> <span class="n">c</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>abc</details>
+
+<p>C1.7.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]:</span>
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a>        <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>3</details>
+
+<p>C1.8.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span>
+<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div></p>
+<details><summary>Ver respuesta</summary>55</details>
+
+<h3 id="c2-completar-codigo-8">C2) Completar código (8)<a class="headerlink" href="#c2-completar-codigo-8" title="Permanent link">&para;</a></h3>
 <p>Rellena <code>_____</code>.
-C2.1. Imprimir números del 1 al 10: <code>for i in _____: print(i)</code><br />
-C2.2. Imprimir pares del 2 al 20.<br />
-C2.3. Sumar los números del 1 al 100 y mostrar la suma.<br />
-C2.4. Contar cuántos múltiplos de 3 hay entre 1 y 30.<br />
-C2.5. Construir una cadena <code>"aaaaa"</code> con cinco <code>'a'</code> usando un <code>for</code>.<br />
-C2.6. Mostrar tabla de multiplicar del <code>n</code> (1..10).<br />
-C2.7. Calcular el <strong>factorial</strong> de <code>n</code> (asume 0 ≤ n ≤ 10).<br />
-C2.8. Dada una lista de enteros, contar cuántos son negativos.<br />
-C2.9. Dada una lista de palabras, concatenarlas separadas por coma.<br />
-C2.10. Dados <code>m</code> y <code>n</code>, imprimir el rectángulo de <code>m</code> filas y <code>n</code> columnas de <code>*</code>.</p>
-<h3 id="c3-programacion-breve-10">C3) Programación breve (10)<a class="headerlink" href="#c3-programacion-breve-10" title="Permanent link">&para;</a></h3>
-<p>C3.1. Imprime los enteros de <strong>N a 1</strong> (descendente).<br />
-C3.2. Cuenta cuántos enteros en <code>1..N</code> son múltiplos de 2 <strong>y</strong> de 5.<br />
-C3.3. Calcula la suma de los <strong>cuadrados</strong> de <code>1..N</code>.<br />
-C3.4. Muestra los <strong>divisores</strong> de un entero positivo <code>n</code>.<br />
-C3.5. Genera una <strong>progresión aritmética</strong>: inicio <code>a</code>, paso <code>d</code>, <code>k</code> términos.<br />
-C3.6. Lee <code>k</code> notas (float) y muestra el <strong>promedio</strong>.<br />
-C3.7. Lee <code>k</code> números y muestra el <strong>máximo</strong> (inicializa con <code>None</code> o primer valor).<br />
-C3.8. Dibuja un <strong>triángulo</strong> de altura <code>h</code> con <code>*</code> (ej.: h=3 → <code>*</code>, <code>**</code>, <code>***</code>).<br />
-C3.9. Imprime solo las <strong>consonantes</strong> de un texto (ignora vocales y espacios).<br />
-C3.10. Genera los primeros <code>N</code> términos de <strong>Fibonacci</strong> (iterativo).</p>
+C2.1. Imprimir 1..10: <code>for i in _____: print(i)</code>  </p>
+<details><summary>Ver respuesta</summary>`range(1, 11)`</details>
+
+<p>C2.2. Imprimir pares del 2 al 20.  </p>
+<details><summary>Ver respuesta</summary>`for i in range(2, 21, 2): print(i)`</details>
+
+<p>C2.3. Sumar 1..100 y mostrar suma.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span> <span class="n">s</span> <span class="o">+=</span> <span class="n">i</span>
+<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>C2.4. Contar múltiplos de 3 entre 1 y 30.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
+<a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>C2.5. Construir <code>"aaaaa"</code> con <code>for</code>.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span> <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;a&quot;</span>
+<a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>C2.6. Tabla de multiplicar de <code>n</code> (1..10).  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-51-2" name="__codelineno-51-2" href="#__codelineno-51-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+<a id="__codelineno-51-3" name="__codelineno-51-3" href="#__codelineno-51-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">n</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>C2.7. Factorial de <code>n</code> (0≤n≤10).  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-52-2" name="__codelineno-52-2" href="#__codelineno-52-2"></a><span class="n">fact</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-52-3" name="__codelineno-52-3" href="#__codelineno-52-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span> <span class="n">fact</span> <span class="o">*=</span> <span class="n">i</span>
+<a id="__codelineno-52-4" name="__codelineno-52-4" href="#__codelineno-52-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">fact</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<p>C2.8. Lista de enteros → contar negativos.  </p>
+<details><summary>Ver respuesta</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-53-3" name="__codelineno-53-3" href="#__codelineno-53-3"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+<a id="__codelineno-53-4" name="__codelineno-53-4" href="#__codelineno-53-4"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-53-5" name="__codelineno-53-5" href="#__codelineno-53-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<h3 id="c3-programacion-breve-8">C3) Programación breve (8)<a class="headerlink" href="#c3-programacion-breve-8" title="Permanent link">&para;</a></h3>
+<p>C3.1. Imprime enteros de <strong>N a 1</strong> (descendente).  </p>
+<details><summary>Ver respuesta</summary>`for i in range(N, 0, -1): print(i)`</details>
+
+<p>C3.2. Cuenta cuántos enteros en <code>1..N</code> son múltiplos de 2 <strong>y</strong> 5.  </p>
+<details><summary>Ver respuesta</summary>Usa `if i % 10 == 0` en el lazo.</details>
+
+<p>C3.3. Suma de cuadrados de <code>1..N</code>.  </p>
+<details><summary>Ver respuesta</summary>Acumula `i*i` en `s`.</details>
+
+<p>C3.4. Imprime los <strong>divisores</strong> de <code>n</code>.  </p>
+<details><summary>Ver respuesta</summary>Itera `i` en `1..n` y prueba `n % i == 0`.</details>
+
+<p>C3.5. Progresión aritmética (inicio <code>a</code>, paso <code>d</code>, <code>k</code> términos).  </p>
+<details><summary>Ver respuesta</summary>`for i in range(k): print(a + i*d)`</details>
+
+<p>C3.6. Lee <code>k</code> notas y muestra el <strong>promedio</strong>.  </p>
+<details><summary>Ver respuesta</summary>Acumula en `s` y divide por `k`.</details>
+
+<p>C3.7. Lee <code>k</code> números y muestra el <strong>máximo</strong>.  </p>
+<details><summary>Ver respuesta</summary>Inicializa `mx = None` y actualiza si `mx is None or x > mx`.</details>
+
+<p>C3.8. Dibuja un <strong>triángulo</strong> de altura <code>h</code> con <code>*</code>.  </p>
+<details><summary>Ver respuesta</summary>`for i in range(1, h+1): print("*"*i)`</details>
+
+<h3 id="c4-alternativas-6">C4) Alternativas (6)<a class="headerlink" href="#c4-alternativas-6" title="Permanent link">&para;</a></h3>
+<p>C4.1. ¿Qué imprime?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
+<a id="__codelineno-54-2" name="__codelineno-54-2" href="#__codelineno-54-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+</code></pre></div>
+a) 2 4 6<br />
+b) 4 6 8<br />
+c) 2 4 6 8<br />
+d) 4 8 12  </p>
+<details><summary>Ver respuesta</summary>b)</details>
+
+<p>C4.2. ¿Qué muestra?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-55-2" name="__codelineno-55-2" href="#__codelineno-55-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+<a id="__codelineno-55-3" name="__codelineno-55-3" href="#__codelineno-55-3"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="n">i</span>
+<a id="__codelineno-55-4" name="__codelineno-55-4" href="#__codelineno-55-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div>
+a) 6  b) 10  c) 3  d) 4  </p>
+<details><summary>Ver respuesta</summary>a)</details>
+
+<p>C4.3. ¿Qué imprime?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="s2">&quot;py&quot;</span><span class="p">:</span>
+<a id="__codelineno-56-2" name="__codelineno-56-2" href="#__codelineno-56-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+a) ppp yyy<br />
+b) py py py<br />
+c) p y<br />
+d) Error  </p>
+<details><summary>Ver respuesta</summary>a)</details>
+
+<p>C4.4. ¿Qué imprime?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
+<a id="__codelineno-57-2" name="__codelineno-57-2" href="#__codelineno-57-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;-&quot;</span><span class="p">)</span>
+</code></pre></div>
+a) 5-4-3-2-1-  b) 5-3-1-  c) 5-2-  d) 1-3-5-  </p>
+<details><summary>Ver respuesta</summary>b)</details>
+
+<p>C4.5. ¿Qué imprime?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="n">total</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-58-2" name="__codelineno-58-2" href="#__codelineno-58-2"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+<a id="__codelineno-58-3" name="__codelineno-58-3" href="#__codelineno-58-3"></a>    <span class="n">total</span> <span class="o">*=</span> <span class="n">x</span>
+<a id="__codelineno-58-4" name="__codelineno-58-4" href="#__codelineno-58-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+</code></pre></div>
+a) 7  b) 10  c) 12  d) 0  </p>
+<details><summary>Ver respuesta</summary>c)</details>
+
+<p>C4.6. ¿Qué imprime?
+<div class="highlight"><pre><span></span><code><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="n">txt</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-59-2" name="__codelineno-59-2" href="#__codelineno-59-2"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="s2">&quot;Ab&quot;</span><span class="p">:</span>
+<a id="__codelineno-59-3" name="__codelineno-59-3" href="#__codelineno-59-3"></a>    <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">islower</span><span class="p">():</span>
+<a id="__codelineno-59-4" name="__codelineno-59-4" href="#__codelineno-59-4"></a>        <span class="n">txt</span> <span class="o">+=</span> <span class="n">ch</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<a id="__codelineno-59-5" name="__codelineno-59-5" href="#__codelineno-59-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-59-6" name="__codelineno-59-6" href="#__codelineno-59-6"></a>        <span class="n">txt</span> <span class="o">+=</span> <span class="n">ch</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<a id="__codelineno-59-7" name="__codelineno-59-7" href="#__codelineno-59-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+</code></pre></div>
+a) ab  b) AB  c) aB  d) aBAb  </p>
+<details><summary>Ver respuesta</summary>c)</details>
+
 <hr />
 <h2 id="como-practicar">Cómo practicar<a class="headerlink" href="#como-practicar" title="Permanent link">&para;</a></h2>
-<p>1) Intenta cada ejercicio <strong>sin correr el código</strong> (predicción).<br />
-2) Luego <strong>implementa/prueba</strong> en tu editor.<br />
-3) Crea <strong>variantes</strong> (más casos, límites, entradas inválidas).</p>
-<p><strong>Sugerencia de estilo:</strong> f-strings, indentación de 4 espacios, nombres descriptivos.<br />
-<strong>Python 3.</strong></p>
+<p>1) Resuelve <strong>sin</strong> desplegar respuestas.<br />
+2) Luego ejecuta el código en tu IDE/intérprete para validar.<br />
+3) Crea variaciones: cambia límites, entradas y orden de condiciones.</p>
 <hr />
 <h3 id="creditos-y-alcance">Créditos y alcance<a class="headerlink" href="#creditos-y-alcance" title="Permanent link">&para;</a></h3>
-<p>Material de práctica basado en los contenidos del curso INFO058 (Secuencias, If/Elif/Else, For). Sin soluciones para promover estudio activo.</p>
+<p>Material de práctica basado en contenidos de INFO058 (Secuencias, If/Elif/Else, For).<br />
+Incluye <strong>respuestas ocultas</strong> para autoevaluación.</p>
 
 
 
