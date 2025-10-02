@@ -1,0 +1,1458 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guía de Python para la asignatura INFO058">
+      
+      
+        <meta name="author" content="Equipo INFO058">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Banco de Ejercicios · Bucle for (solo ejercicios) - INFO058 - Programación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#banco-de-ejercicios-bucle-for-solo-ejercicios" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="INFO058 - Programación" class="md-header__button md-logo" aria-label="INFO058 - Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            INFO058 - Programación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Banco de Ejercicios · Bucle for (solo ejercicios)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tuusuario/INFO058-202502" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="INFO058 - Programación" class="md-nav__button md-logo" aria-label="INFO058 - Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    INFO058 - Programación
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tuusuario/INFO058-202502" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Contenidos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Contenidos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_secuencia_simple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    01 · Secuencia simple
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_if_elif_else/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    02 · if / elif / else
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_for/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    03 · for
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../031_for_exercices.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    03.1 · for excercices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Evaluaciones
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Evaluaciones
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../correccion_control_01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Corrección Control 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preparacion_prueba_01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preparación Prueba 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-for-con-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. for con if
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A. for con if">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e1-contar-positivos-en-una-lista" class="md-nav__link">
+    <span class="md-ellipsis">
+      E1. Contar positivos en una lista
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e2-multiplos-de-3-del-1-al-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      E2. Múltiplos de 3 del 1 al 30
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e3-extraer-mayusculas-de-un-texto" class="md-nav__link">
+    <span class="md-ellipsis">
+      E3. Extraer mayúsculas de un texto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e4-suma-de-pares-hasta-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      E4. Suma de pares hasta n
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e5-contar-letras-a-o-a-sin-listas-externas" class="md-nav__link">
+    <span class="md-ellipsis">
+      E5. Contar letras 'a' o 'A' sin listas externas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-for-con-if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. for con if + else
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. for con if + else">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e6-par-o-impar-por-elemento" class="md-nav__link">
+    <span class="md-ellipsis">
+      E6. Par o impar por elemento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e7-clasificar-signo" class="md-nav__link">
+    <span class="md-ellipsis">
+      E7. Clasificar signo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e8-enmascarar-digitos" class="md-nav__link">
+    <span class="md-ellipsis">
+      E8. Enmascarar dígitos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e9-conservar-solo-letras" class="md-nav__link">
+    <span class="md-ellipsis">
+      E9. Conservar solo letras
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e10-aprobadoreprobado" class="md-nav__link">
+    <span class="md-ellipsis">
+      E10. Aprobado/Reprobado
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-for-con-if-elif-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      C. for con if + elif + else
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="C. for con if + elif + else">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e11-tramos-de-edad" class="md-nav__link">
+    <span class="md-ellipsis">
+      E11. Tramos de edad
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e12-categoria-de-nota-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      E12. Categoría de nota (1–7)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e13-contar-negativos-ceros-y-positivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      E13. Contar negativos, ceros y positivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e14-tipo-de-caracter-letra-digito-otro" class="md-nav__link">
+    <span class="md-ellipsis">
+      E14. Tipo de caracter: letra / dígito / otro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e15-descuento-por-monto" class="md-nav__link">
+    <span class="md-ellipsis">
+      E15. Descuento por monto
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d-for-anidado" class="md-nav__link">
+    <span class="md-ellipsis">
+      D. for anidado
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D. for anidado">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e16-tabla-n-x-m" class="md-nav__link">
+    <span class="md-ellipsis">
+      E16. Tabla n x m
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e17-rectangulo-de" class="md-nav__link">
+    <span class="md-ellipsis">
+      E17. Rectángulo de #
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e18-triangulo-creciente" class="md-nav__link">
+    <span class="md-ellipsis">
+      E18. Triángulo creciente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e19-combinaciones-de-dos-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      E19. Combinaciones de dos listas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e20-matriz-con-consecutivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      E20. Matriz con consecutivos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#e-for-anidados-con-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      E. for anidados con if
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="E. for anidados con if">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#e21-matriz-identidad-n-x-n" class="md-nav__link">
+    <span class="md-ellipsis">
+      E21. Matriz identidad n x n
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e22-triangulo-superior-i-j" class="md-nav__link">
+    <span class="md-ellipsis">
+      E22. Triángulo superior (i &lt; j)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e23-marco-hueco" class="md-nav__link">
+    <span class="md-ellipsis">
+      E23. Marco hueco
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e24-tabla-con-multiplos-marcados" class="md-nav__link">
+    <span class="md-ellipsis">
+      E24. Tabla con múltiplos marcados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e25-ventas-sobre-la-meta-listas-anidadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      E25. Ventas sobre la meta (listas anidadas)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/tuusuario/INFO058-202502/edit/master/docs/ejercicios_for.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="banco-de-ejercicios-bucle-for-solo-ejercicios">Banco de Ejercicios · Bucle <code>for</code> (solo ejercicios)<a class="headerlink" href="#banco-de-ejercicios-bucle-for-solo-ejercicios" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Cada ejercicio explica claramente el <strong>requerimiento</strong>.<br />
+La <strong>solución</strong> está oculta en un bloque desplegable.<br />
+Cuando se usa algo fuera de <code>for</code>, <code>if</code>, <code>else</code>, <code>input</code>, <code>int</code>, <code>float</code>, <code>str</code>, <code>range</code>, <code>print</code>, se incluye una <strong>nota rápida</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="a-for-con-if">A. <code>for</code> con <code>if</code><a class="headerlink" href="#a-for-con-if" title="Permanent link">&para;</a></h2>
+<h3 id="e1-contar-positivos-en-una-lista">E1. Contar positivos en una lista<a class="headerlink" href="#e1-contar-positivos-en-una-lista" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee una línea con números enteros separados por espacio.<br />
+- Recorre la lista con <code>for</code> y <strong>cuenta cuántos son mayores que 0</strong>.<br />
+- Imprime solo el conteo (un número entero).</p>
+<p><strong>Ejemplo (entrada):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>-1 0 5 3 -2 7
+</code></pre></div>
+<strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>3
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">cont</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e2-multiplos-de-3-del-1-al-30">E2. Múltiplos de 3 del 1 al 30<a class="headerlink" href="#e2-multiplos-de-3-del-1-al-30" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Recorre los números del 1 al 30 con <code>for</code>.<br />
+- <strong>Imprime solo</strong> los que sean múltiplos de 3 (uno por línea).</p>
+<p><strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>3
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>6
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>9
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>12
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>15
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>18
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>21
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>24
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>27
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>30
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">31</span><span class="p">):</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e3-extraer-mayusculas-de-un-texto">E3. Extraer mayúsculas de un texto<a class="headerlink" href="#e3-extraer-mayusculas-de-un-texto" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee un texto.<br />
+- Recorre caracter por caracter e <strong>imprime solo las letras mayúsculas</strong> (una por línea).</p>
+<p><strong>Ejemplo (entrada):</strong> <code>Hola Mundo PY</code><br />
+<strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>H
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>M
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>P
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>Y
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">t</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e4-suma-de-pares-hasta-n">E4. Suma de pares hasta <code>n</code><a class="headerlink" href="#e4-suma-de-pares-hasta-n" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee un entero <code>n</code>.<br />
+- Suma <strong>solo los pares</strong> entre 1 y <code>n</code> inclusive.<br />
+- Imprime la suma.</p>
+<p><strong>Ejemplo (entrada):</strong> <code>10</code><br />
+<strong>Salida (ejemplo):</strong> <code>30</code></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        <span class="n">s</span> <span class="o">+=</span> <span class="n">x</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e5-contar-letras-a-o-a-sin-listas-externas">E5. Contar letras 'a' o 'A' sin listas externas<a class="headerlink" href="#e5-contar-letras-a-o-a-sin-listas-externas" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee un texto.<br />
+- Recorre con <code>for</code> y <strong>cuenta cuántas veces</strong> aparece <code>'a'</code> o <code>'A'</code>.<br />
+- Imprime el conteo. <em>(No uses colecciones externas de vocales).</em></p>
+<p><strong>Ejemplo (entrada):</strong> <code>Abracadabra</code><br />
+<strong>Salida (ejemplo):</strong> <code>5</code></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">t</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">if</span> <span class="n">ch</span> <span class="o">==</span> <span class="s1">&#39;a&#39;</span> <span class="ow">or</span> <span class="n">ch</span> <span class="o">==</span> <span class="s1">&#39;A&#39;</span><span class="p">:</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>        <span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="b-for-con-if-else">B. <code>for</code> con <code>if</code> + <code>else</code><a class="headerlink" href="#b-for-con-if-else" title="Permanent link">&para;</a></h2>
+<h3 id="e6-par-o-impar-por-elemento">E6. Par o impar por elemento<a class="headerlink" href="#e6-par-o-impar-por-elemento" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee enteros separados por espacio.<br />
+- Para cada número, imprime <code>"{n}: par"</code> si es par, <strong>de lo contrario</strong> <code>"{n}: impar"</code>.</p>
+<p><strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>2: par
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>7: impar
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>0: par
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">: par&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">: impar&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e7-clasificar-signo">E7. Clasificar signo<a class="headerlink" href="#e7-clasificar-signo" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee enteros separados por espacio.<br />
+- Imprime <code>OK</code> si <code>n &gt;= 0</code>, <strong>si no</strong> imprime <code>NEG</code>.</p>
+<p><strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>-3 NEG
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>0 OK
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>5 OK
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;OK&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="s2">&quot;NEG&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e8-enmascarar-digitos">E8. Enmascarar dígitos<a class="headerlink" href="#e8-enmascarar-digitos" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee un texto.<br />
+- Recorre cada caracter: <strong>si es dígito</strong>, imprime <code>*</code>; <strong>si no</strong>, imprime el caracter original (misma línea, sin espacios extra).</p>
+<p><strong>Ejemplo (entrada):</strong> <code>abc12x9</code><br />
+<strong>Salida (ejemplo):</strong> <code>abc**x*</code></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">t</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">res</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>        <span class="n">res</span> <span class="o">+=</span> <span class="s2">&quot;*&quot;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>        <span class="n">res</span> <span class="o">+=</span> <span class="n">ch</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e9-conservar-solo-letras">E9. Conservar solo letras<a class="headerlink" href="#e9-conservar-solo-letras" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee un texto.<br />
+- Recorre el texto y <strong>construye otro</strong> que contenga únicamente letras (sin números ni símbolos).<br />
+- Imprime el resultado.</p>
+<p><strong>Ejemplo (entrada):</strong> <code>Py3.11 es genial!</code><br />
+<strong>Salida (ejemplo):</strong> <code>Pyesgenial</code></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">t</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">res</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>        <span class="n">res</span> <span class="o">+=</span> <span class="n">ch</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e10-aprobadoreprobado">E10. Aprobado/Reprobado<a class="headerlink" href="#e10-aprobadoreprobado" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee <strong>5</strong> notas decimales (separadas por espacio).<br />
+- Para cada una, imprime <code>APROBADO</code> si <code>nota &gt;= 4.0</code>, <strong>si no</strong>, <code>REPROBADO</code>.</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">notas</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">notas</span><span class="p">[:</span><span class="mi">5</span><span class="p">]:</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mf">4.0</span><span class="p">:</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;APROBADO&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;REPROBADO&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="c-for-con-if-elif-else">C. <code>for</code> con <code>if</code> + <code>elif</code> + <code>else</code><a class="headerlink" href="#c-for-con-if-elif-else" title="Permanent link">&para;</a></h2>
+<h3 id="e11-tramos-de-edad">E11. Tramos de edad<a class="headerlink" href="#e11-tramos-de-edad" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee edades enteras separadas por espacio.<br />
+- Para cada edad imprime:<br />
+  - <code>NIÑO</code> si <code>0–12</code>,<br />
+  - <code>ADOLESCENTE</code> si <code>13–17</code>,<br />
+  - <code>ADULTO</code> si <code>&gt;=18</code>.</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">edades</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">edades</span><span class="p">:</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="k">if</span> <span class="mi">0</span> <span class="o">&lt;=</span> <span class="n">e</span> <span class="o">&lt;=</span> <span class="mi">12</span><span class="p">:</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;NIÑO&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="k">elif</span> <span class="mi">13</span> <span class="o">&lt;=</span> <span class="n">e</span> <span class="o">&lt;=</span> <span class="mi">17</span><span class="p">:</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ADOLESCENTE&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ADULTO&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e12-categoria-de-nota-17">E12. Categoría de nota (1–7)<a class="headerlink" href="#e12-categoria-de-nota-17" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee notas (1.0 a 7.0).<br />
+- Imprime: <code>INSUFICIENTE</code> (&lt;4.0), <code>BUENO</code> (&gt;=4.0 y &lt;6.0), <code>EXCELENTE</code> (&gt;=6.0).</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">notas</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">float</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">notas</span><span class="p">:</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mf">4.0</span><span class="p">:</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;INSUFICIENTE&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mf">6.0</span><span class="p">:</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;BUENO&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;EXCELENTE&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e13-contar-negativos-ceros-y-positivos">E13. Contar negativos, ceros y positivos<a class="headerlink" href="#e13-contar-negativos-ceros-y-positivos" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee enteros separados por espacio.<br />
+- Recorre y <strong>cuenta</strong> cuántos son negativos, ceros y positivos.<br />
+- Imprime los tres conteos en ese orden.</p>
+<p><strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>negativos: 2
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>ceros: 1
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>positivos: 3
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">neg</span> <span class="o">=</span> <span class="n">cer</span> <span class="o">=</span> <span class="n">pos</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>        <span class="n">neg</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>        <span class="n">cer</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>        <span class="n">pos</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;negativos:&quot;</span><span class="p">,</span> <span class="n">neg</span><span class="p">)</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ceros:&quot;</span><span class="p">,</span> <span class="n">cer</span><span class="p">)</span>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;positivos:&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e14-tipo-de-caracter-letra-digito-otro">E14. Tipo de caracter: letra / dígito / otro<a class="headerlink" href="#e14-tipo-de-caracter-letra-digito-otro" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee un texto.<br />
+- Para cada caracter, imprime: <code>LETRA</code> si es letra, <code>DÍGITO</code> si es dígito, <code>OTRO</code> en cualquier otro caso.</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">t</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    <span class="k">if</span> <span class="n">ch</span><span class="o">.</span><span class="n">isalpha</span><span class="p">():</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LETRA&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="k">elif</span> <span class="n">ch</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;DÍGITO&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OTRO&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e15-descuento-por-monto">E15. Descuento por monto<a class="headerlink" href="#e15-descuento-por-monto" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee montos enteros (uno o varios).<br />
+- Para cada monto, determina descuento:<br />
+  - <code>&lt; 20000</code>: 0%<br />
+  - <code>20000–49999</code>: 5%<br />
+  - <code>&gt;= 50000</code>: 10%<br />
+- Imprime <code>monto</code>, <code>%desc</code> y <code>total</code> (monto - descuento).</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">montos</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">montos</span><span class="p">:</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="k">if</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="mi">20000</span><span class="p">:</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>        <span class="n">d</span> <span class="o">=</span> <span class="mf">0.0</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="k">elif</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="mi">50000</span><span class="p">:</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>        <span class="n">d</span> <span class="o">=</span> <span class="mf">0.05</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>        <span class="n">d</span> <span class="o">=</span> <span class="mf">0.10</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>    <span class="n">total</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">m</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">d</span><span class="p">)))</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">d</span><span class="o">*</span><span class="mi">100</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="d-for-anidado">D. <code>for</code> anidado<a class="headerlink" href="#d-for-anidado" title="Permanent link">&para;</a></h2>
+<h3 id="e16-tabla-n-x-m">E16. Tabla <code>n x m</code><a class="headerlink" href="#e16-tabla-n-x-m" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee dos enteros <code>n</code> y <code>m</code>.<br />
+- Imprime una tabla con <code>n</code> filas y <code>m</code> columnas con el formato <code>i,j</code> (índices 1-based).</p>
+<p><strong>Ejemplo (entrada):</strong> <code>2 3</code><br />
+<strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>1,1  1,2  1,3
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>2,1  2,2  2,3
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="n">fila</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>        <span class="n">fila</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">,</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fila</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e17-rectangulo-de">E17. Rectángulo de <code>#</code><a class="headerlink" href="#e17-rectangulo-de" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee alto <code>h</code> y ancho <code>w</code>.<br />
+- Dibuja un rectángulo sólido de <code>#</code> de <code>h</code> filas por <code>w</code> columnas.</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">h</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>    <span class="n">linea</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>        <span class="n">linea</span> <span class="o">+=</span> <span class="s2">&quot;#&quot;</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e18-triangulo-creciente">E18. Triángulo creciente<a class="headerlink" href="#e18-triangulo-creciente" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee <code>n</code>.<br />
+- Imprime un triángulo de asteriscos con <code>n</code> filas, donde la fila <code>i</code> tiene <code>i</code> asteriscos.</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>    <span class="n">linea</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>        <span class="n">linea</span> <span class="o">+=</span> <span class="s2">&quot;*&quot;</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e19-combinaciones-de-dos-listas">E19. Combinaciones de dos listas<a class="headerlink" href="#e19-combinaciones-de-dos-listas" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Dadas dos listas <code>A</code> y <code>B</code> (define algunos valores), imprime <strong>todas las combinaciones</strong> <code>a-b</code> para <code>a</code> en <code>A</code> y <code>b</code> en <code>B</code>.</p>
+<p><strong>Nota rápida:</strong><br />
+- <strong>Lista</strong>: estructura que guarda elementos en orden. Se escribe entre corchetes, por ejemplo: <code>A = ["rojo", "azul"]</code>.<br />
+- Puedes recorrerla con <code>for</code> y acceder por índice (0, 1, 2, ...).</p>
+<p><strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>rojo-S  rojo-M  rojo-L
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>azul-S  azul-M  azul-L
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">A</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;rojo&quot;</span><span class="p">,</span> <span class="s2">&quot;azul&quot;</span><span class="p">]</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="n">B</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;S&quot;</span><span class="p">,</span> <span class="s2">&quot;M&quot;</span><span class="p">,</span> <span class="s2">&quot;L&quot;</span><span class="p">]</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">A</span><span class="p">:</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="n">fila</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="n">B</span><span class="p">:</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>        <span class="n">fila</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">-</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fila</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e20-matriz-con-consecutivos">E20. Matriz con consecutivos<a class="headerlink" href="#e20-matriz-con-consecutivos" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee <code>n</code> y <code>m</code>.<br />
+- Construye una <strong>matriz</strong> con números consecutivos desde 1 hasta <code>n*m</code>, por filas.<br />
+- Imprime cada fila en una línea.</p>
+<p><strong>Nota rápida:</strong><br />
+- <strong>Matriz</strong>: comúnmente se representa como <strong>lista de listas</strong>. Cada sublista es una fila.<br />
+  Ejemplo (2x3): <code>[[1,2,3],[4,5,6]]</code>. Se recorre con <code>for</code> anidado.</p>
+<p><strong>Ejemplo (entrada):</strong> <code>2 4</code><br />
+<strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>1 2 3 4
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>5 6 7 8
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">n</span><span class="p">,</span> <span class="n">m</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>    <span class="n">fila</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>        <span class="n">fila</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>        <span class="n">cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fila</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="e-for-anidados-con-if">E. <code>for</code> anidados con <code>if</code><a class="headerlink" href="#e-for-anidados-con-if" title="Permanent link">&para;</a></h2>
+<h3 id="e21-matriz-identidad-n-x-n">E21. Matriz identidad <code>n x n</code><a class="headerlink" href="#e21-matriz-identidad-n-x-n" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee <code>n</code>.<br />
+- Imprime la <strong>matriz identidad</strong>: <code>1</code> cuando <code>i == j</code>, si no <code>0</code>.</p>
+<p><strong>Nota rápida:</strong><br />
+- <strong>Matriz identidad</strong>: cuadrada con 1 en la diagonal principal y 0 en el resto.</p>
+<p><strong>Salida (ejemplo para n=3):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>1 0 0
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>0 1 0
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>0 0 1
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="n">fila</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">j</span><span class="p">:</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>            <span class="n">fila</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>            <span class="n">fila</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">)</span>
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fila</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e22-triangulo-superior-i-j">E22. Triángulo superior (i &lt; j)<a class="headerlink" href="#e22-triangulo-superior-i-j" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee <code>n</code>.<br />
+- Recorre todas las parejas <code>(i,j)</code> con <code>0 &lt;= i,j &lt; n</code>.<br />
+- Imprime <strong>solo</strong> las parejas donde <code>i &lt; j</code>.</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>        <span class="k">if</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="p">:</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e23-marco-hueco">E23. Marco hueco<a class="headerlink" href="#e23-marco-hueco" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee alto <code>h</code> y ancho <code>w</code>.<br />
+- Dibuja un <strong>marco</strong> de <code>*</code> con interior vacío (espacios).<br />
+- Bordes con <code>*</code>, interior con espacios.</p>
+<p><strong>Ejemplo (entrada):</strong> <code>4 6</code><br />
+<strong>Salida (ejemplo):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>******
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>*    *
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>*    *
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>******
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="n">h</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">h</span><span class="p">):</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>    <span class="n">linea</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">w</span><span class="p">):</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>        <span class="k">if</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">h</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">or</span> <span class="n">j</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">w</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>            <span class="n">linea</span> <span class="o">+=</span> <span class="s2">&quot;*&quot;</span>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>            <span class="n">linea</span> <span class="o">+=</span> <span class="s2">&quot; &quot;</span>
+<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">linea</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e24-tabla-con-multiplos-marcados">E24. Tabla con múltiplos marcados<a class="headerlink" href="#e24-tabla-con-multiplos-marcados" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Lee <code>n</code>.<br />
+- Imprime una tabla <code>n x n</code> con los números <code>1..n*n</code> por filas.<br />
+- <strong>Si el número es múltiplo de 3</strong>, imprime <code>X</code> en su lugar.</p>
+<p><strong>Salida (ejemplo para n=4):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>1 2 X 4
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>5 X 7 8
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>X 10 11 X
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>13 14 X 16
+</code></pre></div></p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="n">val</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>    <span class="n">fila</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>        <span class="k">if</span> <span class="n">val</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>            <span class="n">fila</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;X&quot;</span><span class="p">)</span>
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a>            <span class="n">fila</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">val</span><span class="p">))</span>
+<a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>        <span class="n">val</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">fila</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e25-ventas-sobre-la-meta-listas-anidadas">E25. Ventas sobre la meta (listas anidadas)<a class="headerlink" href="#e25-ventas-sobre-la-meta-listas-anidadas" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong><br />
+- Dada una estructura de ventas por sucursal (lista de listas), donde cada sublista son las ventas <strong>diarias</strong> de una sucursal:<br />
+<code>ventas = [[10, 20, 5], [8, 12, 15], [30, 25, 10]]</code><br />
+- Lee una <strong>meta</strong> entera.<br />
+- Recorre sucursales y días con <code>for</code> anidados.<br />
+- <strong>Imprime</strong> <code>Sucursal i - Día j: venta</code> <strong>solo si</strong> la venta es <code>&gt;= meta</code>.<br />
+  (Índices 1-based en la impresión.)</p>
+<p><strong>Nota rápida:</strong><br />
+- <strong>Lista de listas</strong>: cada elemento de la lista principal es otra lista (una fila/colección). Se recorre con dos <code>for</code>.</p>
+<details><summary><strong>Ver solución</strong></summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="n">ventas</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">10</span><span class="p">]]</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="n">meta</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ventas</span><span class="p">)):</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ventas</span><span class="p">[</span><span class="n">i</span><span class="p">])):</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>        <span class="k">if</span> <span class="n">ventas</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">meta</span><span class="p">:</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Sucursal </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> - Día </span><span class="si">{</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">ventas</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.expand", "navigation.top", "content.code.copy", "content.action.edit", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
