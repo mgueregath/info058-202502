@@ -1,0 +1,1695 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guía de Python para la asignatura INFO058">
+      
+      
+        <meta name="author" content="Equipo INFO058">
+      
+      
+      
+        <link rel="prev" href="../031_for_exercices/">
+      
+      
+        <link rel="next" href="../correccion_control_01/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>04 · while - INFO058 - Programación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#04-repeticion-con-while" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="INFO058 - Programación" class="md-header__button md-logo" aria-label="INFO058 - Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            INFO058 - Programación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              04 · while
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="light-blue"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tuusuario/INFO058-202502" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="INFO058 - Programación" class="md-nav__button md-logo" aria-label="INFO058 - Programación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    INFO058 - Programación
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tuusuario/INFO058-202502" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Contenidos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Contenidos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_secuencia_simple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    01 · Secuencia simple
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_if_elif_else/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    02 · if / elif / else
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_for/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    03 · for
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../031_for_exercices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    03.1 · for excercices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    04 · while
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    04 · while
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-de-estructuras-de-control-secuencia-seleccion-y-repeticion" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Resumen de estructuras de control: secuencia, selección y repetición
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Qué es un while
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencias-entre-for-y-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Diferencias entre for y while
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-internamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Cómo funciona internamente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuidados-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Cuidados importantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos-practicos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejemplos prácticos de uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Ejemplos prácticos de uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-contador-ascendente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 1: Contador ascendente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-solicitar-contrasena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 2: Solicitar contraseña
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-3-leer-hasta-condicion-de-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 3: Leer hasta condición de salida
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4-bucle-con-break" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 4: Bucle con break
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-5-validacion-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 5: Validación de entrada
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Evaluaciones
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Evaluaciones
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../correccion_control_01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Corrección Control 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preparacion_prueba_01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Preparación Prueba 01
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#resumen-de-estructuras-de-control-secuencia-seleccion-y-repeticion" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Resumen de estructuras de control: secuencia, selección y repetición
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Qué es un while
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diferencias-entre-for-y-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Diferencias entre for y while
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-internamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Cómo funciona internamente
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuidados-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Cuidados importantes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejemplos-practicos-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejemplos prácticos de uso
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 Ejemplos prácticos de uso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-contador-ascendente" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 1: Contador ascendente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-solicitar-contrasena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 2: Solicitar contraseña
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-3-leer-hasta-condicion-de-salida" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 3: Leer hasta condición de salida
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4-bucle-con-break" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 4: Bucle con break
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-5-validacion-de-entrada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo 5: Validación de entrada
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/tuusuario/INFO058-202502/edit/master/docs/04_while.md" title="Editar esta página" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="04-repeticion-con-while">04 · Repetición con <code>while</code><a class="headerlink" href="#04-repeticion-con-while" title="Permanent link">&para;</a></h1>
+<h2 id="resumen-de-estructuras-de-control-secuencia-seleccion-y-repeticion">🧩 Resumen de estructuras de control: secuencia, selección y repetición<a class="headerlink" href="#resumen-de-estructuras-de-control-secuencia-seleccion-y-repeticion" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Palabra clave</th>
+<th>Propósito</th>
+<th>Ejemplo breve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Secuencia</td>
+<td>—</td>
+<td>Ejecutar instrucciones en orden</td>
+<td><code>a = 5; b = a + 2; print(b)</code></td>
+</tr>
+<tr>
+<td>Selección</td>
+<td><code>if / elif / else</code></td>
+<td>Elegir entre rutas según una condición</td>
+<td><code>if x&gt;0: print("positivo")</code></td>
+</tr>
+<tr>
+<td>Repetición (definida)</td>
+<td><code>for</code></td>
+<td>Repetir un número conocido de veces</td>
+<td><code>for i in range(5): print(i)</code></td>
+</tr>
+<tr>
+<td>Repetición (indefinida)</td>
+<td><code>while</code></td>
+<td>Repetir mientras una condición sea verdadera</td>
+<td><code>while n&gt;0: n -= 1</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="que-es-un-while">🔍 Qué es un <code>while</code><a class="headerlink" href="#que-es-un-while" title="Permanent link">&para;</a></h2>
+<p>El bucle <code>while</code> permite repetir instrucciones <strong>mientras una condición se cumpla</strong>.<br />
+Cuando la condición deja de ser verdadera, el ciclo termina.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">while</span> <span class="n">condicion</span><span class="p">:</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="c1"># bloque</span>
+</code></pre></div>
+<p>Ejemplo simple:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># salida: 1 2 3</span>
+</code></pre></div>
+<hr />
+<h2 id="diferencias-entre-for-y-while">⚙️ Diferencias entre <code>for</code> y <code>while</code><a class="headerlink" href="#diferencias-entre-for-y-while" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><code>for</code></th>
+<th><code>while</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Se usa cuando <strong>sabes cuántas veces</strong> repetir</td>
+<td>Se usa cuando <strong>no sabes cuántas veces</strong>, pero sabes la condición</td>
+</tr>
+<tr>
+<td>Recorre secuencias o rangos</td>
+<td>Evalúa una condición booleana</td>
+</tr>
+<tr>
+<td>Menos riesgo de bucle infinito</td>
+<td>Requiere actualizar variables internas</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="como-funciona-internamente">🧠 Cómo funciona internamente<a class="headerlink" href="#como-funciona-internamente" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Se evalúa la <strong>condición</strong>.  </li>
+<li>Si es <code>True</code>, se ejecuta el <strong>bloque</strong>.  </li>
+<li>Al terminar el bloque, se <strong>vuelve a evaluar</strong> la condición.  </li>
+<li>Si es <code>False</code>, el bucle termina.</li>
+</ol>
+<p>Si la condición nunca cambia o no se vuelve falsa, el bucle será infinito.</p>
+<hr />
+<h2 id="cuidados-importantes">⚠️ Cuidados importantes<a class="headerlink" href="#cuidados-importantes" title="Permanent link">&para;</a></h2>
+<p>Un error común es olvidar modificar las variables dentro del <code>while</code>, lo que genera <strong>bucles infinitos</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># bucle infinito: x nunca cambia</span>
+</code></pre></div>
+<hr />
+<h2 id="ejemplos-practicos-de-uso">💡 Ejemplos prácticos de uso<a class="headerlink" href="#ejemplos-practicos-de-uso" title="Permanent link">&para;</a></h2>
+<h3 id="ejemplo-1-contador-ascendente">Ejemplo 1: Contador ascendente<a class="headerlink" href="#ejemplo-1-contador-ascendente" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+📘 Este programa imprime los números del 1 al 5. La variable <code>i</code> se incrementa en cada iteración.</p>
+<hr />
+<h3 id="ejemplo-2-solicitar-contrasena">Ejemplo 2: Solicitar contraseña<a class="headerlink" href="#ejemplo-2-solicitar-contrasena" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">clave</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">while</span> <span class="n">clave</span> <span class="o">!=</span> <span class="s2">&quot;python123&quot;</span><span class="p">:</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">clave</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Contraseña: &quot;</span><span class="p">)</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Acceso concedido ✅&quot;</span><span class="p">)</span>
+</code></pre></div>
+📘 Aquí el bucle se repite <strong>hasta que la contraseña ingresada sea la correcta</strong>.</p>
+<hr />
+<h3 id="ejemplo-3-leer-hasta-condicion-de-salida">Ejemplo 3: Leer hasta condición de salida<a class="headerlink" href="#ejemplo-3-leer-hasta-condicion-de-salida" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">nombre</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">while</span> <span class="n">nombre</span> <span class="o">!=</span> <span class="s2">&quot;fin&quot;</span><span class="p">:</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese un nombre (o ingrese la palabra fin para terminar): &quot;</span><span class="p">)</span>
+</code></pre></div>
+📘 Este patrón es común en bucles controlados por <strong>una palabra centinela</strong>.</p>
+<hr />
+<h3 id="ejemplo-4-bucle-con-break">Ejemplo 4: Bucle con <code>break</code><a class="headerlink" href="#ejemplo-4-bucle-con-break" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">texto</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Texto (escriba &#39;salir&#39; para terminar): &quot;</span><span class="p">)</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="k">if</span> <span class="n">texto</span> <span class="o">==</span> <span class="s2">&quot;salir&quot;</span><span class="p">:</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        <span class="k">break</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usted escribió:&quot;</span><span class="p">,</span> <span class="n">texto</span><span class="p">)</span>
+</code></pre></div>
+📘 Aquí el bucle se detiene <strong>cuando el usuario escribe “salir”</strong>, gracias al uso de <code>break</code>.</p>
+<hr />
+<h3 id="ejemplo-5-validacion-de-entrada">Ejemplo 5: Validación de entrada<a class="headerlink" href="#ejemplo-5-validacion-de-entrada" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">n</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">while</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese un número positivo: &quot;</span><span class="p">))</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Número aceptado:&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</code></pre></div>
+📘 Este <code>while</code> garantiza que el valor ingresado sea válido antes de continuar el programa.</p>
+<hr />
+<h1 id="ejercicios-con-while">🧮 Ejercicios con <code>while</code><a class="headerlink" href="#ejercicios-con-while" title="Permanent link">&para;</a></h1>
+<p>Cada ejercicio incluye un <strong>requerimiento explicado claramente</strong> y su <strong>solución oculta</strong> en un bloque <code>&lt;details&gt;</code>.</p>
+<hr />
+<h2 id="a-while-simple">A. While simple<a class="headerlink" href="#a-while-simple" title="Permanent link">&para;</a></h2>
+<h3 id="e1-contador-del-1-al-10">E1. Contador del 1 al 10<a class="headerlink" href="#e1-contador-del-1-al-10" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Escribe un programa que muestre los números del 1 al 10 en orden ascendente.<br />
+Debe usar un bucle <code>while</code> y una variable que se incremente en cada iteración.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">while</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e2-cuenta-regresiva-desde-10">E2. Cuenta regresiva desde 10<a class="headerlink" href="#e2-cuenta-regresiva-desde-10" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicita al usuario un número y muestra una cuenta regresiva desde ese valor hasta 1.<br />
+Utiliza <code>while</code> y resta 1 en cada iteración.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número inicial: &quot;</span><span class="p">))</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">while</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="n">n</span> <span class="o">-=</span> <span class="mi">1</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Despegue! 🚀&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e3-suma-acumulada">E3. Suma acumulada<a class="headerlink" href="#e3-suma-acumulada" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicita un número N y calcula la suma de todos los números desde 1 hasta N.<br />
+El resultado se muestra al final del programa.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese N: &quot;</span><span class="p">))</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">N</span><span class="p">:</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="n">suma</span> <span class="o">+=</span> <span class="n">i</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La suma es:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e4-promedio-hasta-cero">E4. Promedio hasta cero<a class="headerlink" href="#e4-promedio-hasta-cero" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pide números al usuario hasta que ingrese 0.<br />
+El programa debe calcular y mostrar el promedio de los números ingresados (sin contar el cero).</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese un número (0 para terminar): &quot;</span><span class="p">))</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="n">suma</span> <span class="o">+=</span> <span class="n">n</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese otro número (0 para terminar): &quot;</span><span class="p">))</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="k">if</span> <span class="n">cont</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Promedio:&quot;</span><span class="p">,</span> <span class="n">suma</span> <span class="o">/</span> <span class="n">cont</span><span class="p">)</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No se ingresaron datos&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e5-validar-contrasena">E5. Validar contraseña<a class="headerlink" href="#e5-validar-contrasena" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Crea un programa que pida una contraseña y repita la solicitud hasta que el usuario escriba <code>"segura123"</code>.<br />
+Luego, muestra un mensaje de acceso permitido.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">clave</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">while</span> <span class="n">clave</span> <span class="o">!=</span> <span class="s2">&quot;segura123&quot;</span><span class="p">:</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="n">clave</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese la contraseña: &quot;</span><span class="p">)</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Acceso permitido&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="b-while-con-if">B. While con if<a class="headerlink" href="#b-while-con-if" title="Permanent link">&para;</a></h2>
+<h3 id="e6-contar-positivos">E6. Contar positivos<a class="headerlink" href="#e6-contar-positivos" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicita 10 números y cuenta cuántos son positivos.<br />
+Debe mostrar el total al final.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">positivos</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>        <span class="n">positivos</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cantidad de positivos:&quot;</span><span class="p">,</span> <span class="n">positivos</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e7-leer-hasta-numero-par">E7. Leer hasta número par<a class="headerlink" href="#e7-leer-hasta-numero-par" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicita números hasta que el usuario ingrese un número par.<br />
+Al finalizar, muestra el total de números impares ingresados antes del par.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese un número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese otro número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Impares ingresados antes del par:&quot;</span><span class="p">,</span> <span class="n">cont</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e8-contar-multiplos-de-5">E8. Contar múltiplos de 5<a class="headerlink" href="#e8-contar-multiplos-de-5" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pide números enteros hasta ingresar <code>-1</code>.<br />
+Cuenta cuántos fueron múltiplos de 5.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (-1 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>        <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (-1 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Múltiplos de 5:&quot;</span><span class="p">,</span> <span class="n">cont</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e9-numeros-positivos-y-negativos">E9. Números positivos y negativos<a class="headerlink" href="#e9-numeros-positivos-y-negativos" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pide al usuario números hasta que escriba 0.<br />
+Cuenta cuántos son positivos y cuántos negativos.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">pos</span> <span class="o">=</span> <span class="n">neg</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (0 para terminar): &quot;</span><span class="p">))</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>        <span class="n">pos</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>        <span class="n">neg</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (0 para terminar): &quot;</span><span class="p">))</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Positivos:&quot;</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="s2">&quot;Negativos:&quot;</span><span class="p">,</span> <span class="n">neg</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e10-adivina-el-numero">E10. Adivina el número<a class="headerlink" href="#e10-adivina-el-numero" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> El programa tiene un número secreto (por ejemplo, 15).<br />
+El usuario debe adivinarlo. Si el número ingresado es menor o mayor, el programa lo indica hasta que acierte.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">secreto</span> <span class="o">=</span> <span class="mi">15</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">n</span> <span class="o">=</span> <span class="kc">None</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="n">secreto</span><span class="p">:</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Adivina el número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">secreto</span><span class="p">:</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Demasiado bajo&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">secreto</span><span class="p">:</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Demasiado alto&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Correcto!&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<h2 id="c-while-con-if-else">C. While con if / else<a class="headerlink" href="#c-while-con-if-else" title="Permanent link">&para;</a></h2>
+<h3 id="e11-determinar-si-los-numeros-son-pares-o-impares">E11. Determinar si los números son pares o impares<a class="headerlink" href="#e11-determinar-si-los-numeros-son-pares-o-impares" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicitar al usuario que ingrese números enteros hasta que escriba 0.<br />
+Por cada número ingresado, indicar si es par o impar.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (0 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Es par&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Es impar&quot;</span><span class="p">)</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (0 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Programa finalizado&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e12-calcular-el-factorial-de-un-numero">E12. Calcular el factorial de un número<a class="headerlink" href="#e12-calcular-el-factorial-de-un-numero" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicitar un número entero positivo y calcular su factorial usando un <code>while</code>.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese un número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">fact</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">:</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    <span class="n">fact</span> <span class="o">*=</span> <span class="n">i</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El factorial de&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="s2">&quot;es&quot;</span><span class="p">,</span> <span class="n">fact</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e13-validar-contrasena-con-mensaje-de-error">E13. Validar contraseña con mensaje de error<a class="headerlink" href="#e13-validar-contrasena-con-mensaje-de-error" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Permitir hasta 3 intentos de contraseña. Mostrar un mensaje de error en cada intento fallido.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">clave</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">intentos</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">while</span> <span class="n">clave</span> <span class="o">!=</span> <span class="s2">&quot;python123&quot;</span> <span class="ow">and</span> <span class="n">intentos</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="n">clave</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese la contraseña: &quot;</span><span class="p">)</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="k">if</span> <span class="n">clave</span> <span class="o">!=</span> <span class="s2">&quot;python123&quot;</span><span class="p">:</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Contraseña incorrecta.&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>    <span class="n">intentos</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="k">if</span> <span class="n">clave</span> <span class="o">==</span> <span class="s2">&quot;python123&quot;</span><span class="p">:</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Acceso concedido ✅&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cuenta bloqueada ❌&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e14-verificar-multiplos-de-3">E14. Verificar múltiplos de 3<a class="headerlink" href="#e14-verificar-multiplos-de-3" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Leer números hasta que se ingrese un número negativo.<br />
+Mostrar cuántos fueron múltiplos de 3 y cuántos no.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">mult3</span> <span class="o">=</span> <span class="n">no_mult3</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (negativo para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>        <span class="n">mult3</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>        <span class="n">no_mult3</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (negativo para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Múltiplos de 3:&quot;</span><span class="p">,</span> <span class="n">mult3</span><span class="p">,</span> <span class="s2">&quot;| No múltiplos:&quot;</span><span class="p">,</span> <span class="n">no_mult3</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e15-promedio-de-pares-e-impares">E15. Promedio de pares e impares<a class="headerlink" href="#e15-promedio-de-pares-e-impares" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pedir números hasta ingresar 0. Calcular por separado el promedio de números pares e impares.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">suma_par</span> <span class="o">=</span> <span class="n">suma_imp</span> <span class="o">=</span> <span class="n">cont_par</span> <span class="o">=</span> <span class="n">cont_imp</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (0 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>        <span class="n">suma_par</span> <span class="o">+=</span> <span class="n">n</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>        <span class="n">cont_par</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>        <span class="n">suma_imp</span> <span class="o">+=</span> <span class="n">n</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>        <span class="n">cont_imp</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (0 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Promedio pares:&quot;</span><span class="p">,</span> <span class="n">suma_par</span><span class="o">/</span><span class="n">cont_par</span> <span class="k">if</span> <span class="n">cont_par</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Promedio impares:&quot;</span><span class="p">,</span> <span class="n">suma_imp</span><span class="o">/</span><span class="n">cont_imp</span> <span class="k">if</span> <span class="n">cont_imp</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="d-while-con-if-elif-else">D. While con if / elif / else<a class="headerlink" href="#d-while-con-if-elif-else" title="Permanent link">&para;</a></h2>
+<h3 id="e16-clasificar-temperatura">E16. Clasificar temperatura<a class="headerlink" href="#e16-clasificar-temperatura" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Leer temperaturas hasta ingresar -100. Clasificar cada una como “Baja” (&lt;10), “Media” (10–25) o “Alta” (&gt;25).</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">t</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Temperatura (-100 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="k">while</span> <span class="n">t</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">100</span><span class="p">:</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="k">if</span> <span class="n">t</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Baja&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="k">elif</span> <span class="n">t</span> <span class="o">&lt;=</span> <span class="mi">25</span><span class="p">:</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Media&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Alta&quot;</span><span class="p">)</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>    <span class="n">t</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Temperatura (-100 para salir): &quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e17-clasificacion-de-notas">E17. Clasificación de notas<a class="headerlink" href="#e17-clasificacion-de-notas" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pedir notas entre 1 y 7. Mostrar “Insuficiente”, “Suficiente” o “Sobresaliente”. Salir al ingresar 0.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="n">nota</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Nota (0 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="k">while</span> <span class="n">nota</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>    <span class="k">if</span> <span class="n">nota</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Insuficiente&quot;</span><span class="p">)</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    <span class="k">elif</span> <span class="n">nota</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">:</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Suficiente&quot;</span><span class="p">)</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sobresaliente&quot;</span><span class="p">)</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>    <span class="n">nota</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Nota (0 para salir): &quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e18-clasificar-edades">E18. Clasificar edades<a class="headerlink" href="#e18-clasificar-edades" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Leer edades hasta ingresar -1. Clasificar como “niño”, “adulto” o “adulto mayor”.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Edad (-1 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">while</span> <span class="n">edad</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>    <span class="k">if</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Niño/a&quot;</span><span class="p">)</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>    <span class="k">elif</span> <span class="n">edad</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">:</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adulto/a&quot;</span><span class="p">)</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Adulto/a mayor&quot;</span><span class="p">)</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>    <span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Edad (-1 para salir): &quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e19-contador-de-categorias">E19. Contador de categorías<a class="headerlink" href="#e19-contador-de-categorias" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Leer números entre 1 y 100 hasta ingresar 0. Contar cuántos son menores a 50, iguales a 50 o mayores.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="n">men</span> <span class="o">=</span> <span class="n">ig</span> <span class="o">=</span> <span class="n">may</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (0 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>        <span class="n">men</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">50</span><span class="p">:</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>        <span class="n">ig</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>        <span class="n">may</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número (0 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Menores:&quot;</span><span class="p">,</span> <span class="n">men</span><span class="p">,</span> <span class="s2">&quot;Iguales:&quot;</span><span class="p">,</span> <span class="n">ig</span><span class="p">,</span> <span class="s2">&quot;Mayores:&quot;</span><span class="p">,</span> <span class="n">may</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e20-juego-de-adivinanza-avanzado">E20. Juego de adivinanza avanzado<a class="headerlink" href="#e20-juego-de-adivinanza-avanzado" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> El número secreto es 42. Indica “muy bajo”, “bajo”, “alto” o “muy alto” según la diferencia.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="n">secreto</span> <span class="o">=</span> <span class="mi">42</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="n">n</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="n">secreto</span><span class="p">:</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Adivina el número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">secreto</span> <span class="o">-</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Muy bajo&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">secreto</span><span class="p">:</span>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bajo&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">secreto</span> <span class="o">+</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Muy alto&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="n">secreto</span><span class="p">:</span>
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Alto&quot;</span><span class="p">)</span>
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;¡Correcto!&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="e-while-anidado">E. While anidado<a class="headerlink" href="#e-while-anidado" title="Permanent link">&para;</a></h2>
+<h3 id="e21-tabla-de-multiplicar">E21. Tabla de multiplicar<a class="headerlink" href="#e21-tabla-de-multiplicar" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Mostrar las tablas de multiplicar del 1 al 5. Usa dos bucles <code>while</code> anidados.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>    <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="p">)</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>        <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-----&quot;</span><span class="p">)</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e22-imprimir-patron-de-asteriscos">E22. Imprimir patrón de asteriscos<a class="headerlink" href="#e22-imprimir-patron-de-asteriscos" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Imprimir un triángulo de asteriscos de 5 filas.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>    <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="n">i</span><span class="p">:</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>        <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>    <span class="nb">print</span><span class="p">()</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e23-sumar-matrices-3x3">E23. Sumar matrices 3x3<a class="headerlink" href="#e23-sumar-matrices-3x3" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicitar valores para dos matrices 3x3 y mostrar su suma.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="n">C</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>    <span class="n">filaA</span><span class="p">,</span> <span class="n">filaB</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>    <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>    <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>        <span class="n">filaA</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;A[</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">][</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">]: &quot;</span><span class="p">)))</span>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>        <span class="n">filaB</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;B[</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">][</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">]: &quot;</span><span class="p">)))</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>        <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>    <span class="n">A</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">filaA</span><span class="p">)</span>
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>    <span class="n">B</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">filaB</span><span class="p">)</span>
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>    <span class="n">fila</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>        <span class="n">fila</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+<a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a>    <span class="n">C</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fila</span><span class="p">)</span>
+<a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Resultado:&quot;</span><span class="p">,</span> <span class="n">C</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="f-while-con-break-y-continue">F. While con break y continue<a class="headerlink" href="#f-while-con-break-y-continue" title="Permanent link">&para;</a></h2>
+<h3 id="e24-validar-rango-de-numero">E24. Validar rango de número<a class="headerlink" href="#e24-validar-rango-de-numero" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pedir un número entre 1 y 10. Repetir hasta que esté dentro del rango.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese un número (1-10): &quot;</span><span class="p">))</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>    <span class="k">if</span> <span class="mi">1</span> <span class="o">&lt;=</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>        <span class="k">break</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fuera de rango. Intente nuevamente.&quot;</span><span class="p">)</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Número válido:&quot;</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e25-saltar-numeros-pares">E25. Saltar números pares<a class="headerlink" href="#e25-saltar-numeros-pares" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Mostrar números del 1 al 10, omitiendo los pares.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>    <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>        <span class="k">continue</span>
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e26-suma-hasta-superar-100">E26. Suma hasta superar 100<a class="headerlink" href="#e26-suma-hasta-superar-100" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pedir números y sumarlos hasta que la suma total supere 100.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="n">total</span> <span class="o">=</span> <span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="k">while</span> <span class="n">total</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>    <span class="n">total</span> <span class="o">+=</span> <span class="n">n</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Se ingresaron&quot;</span><span class="p">,</span> <span class="n">cont</span><span class="p">,</span> <span class="s2">&quot;números. Total:&quot;</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e27-login-con-break">E27. Login con break<a class="headerlink" href="#e27-login-con-break" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Validar usuario y contraseña hasta acertar o escribir "salir".</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>    <span class="n">user</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Usuario: &quot;</span><span class="p">)</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>    <span class="n">pwd</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Contraseña: &quot;</span><span class="p">)</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>    <span class="k">if</span> <span class="n">user</span> <span class="o">==</span> <span class="s2">&quot;admin&quot;</span> <span class="ow">and</span> <span class="n">pwd</span> <span class="o">==</span> <span class="s2">&quot;1234&quot;</span><span class="p">:</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Bienvenido&quot;</span><span class="p">)</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>        <span class="k">break</span>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>    <span class="k">elif</span> <span class="n">user</span> <span class="o">==</span> <span class="s2">&quot;salir&quot;</span><span class="p">:</span>
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cerrando sesión&quot;</span><span class="p">)</span>
+<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>        <span class="k">break</span>
+<a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Credenciales incorrectas.&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="g-aplicaciones-practicas">G. Aplicaciones prácticas<a class="headerlink" href="#g-aplicaciones-practicas" title="Permanent link">&para;</a></h2>
+<h3 id="e28-simular-carga-de-bateria">E28. Simular carga de batería<a class="headerlink" href="#e28-simular-carga-de-bateria" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Mostrar porcentaje de batería desde 0% hasta 100% de 10 en 10.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="n">carga</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a><span class="k">while</span> <span class="n">carga</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Batería:&quot;</span><span class="p">,</span> <span class="n">carga</span><span class="p">,</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>    <span class="n">carga</span> <span class="o">+=</span> <span class="mi">10</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e29-generar-serie-fibonacci">E29. Generar serie Fibonacci<a class="headerlink" href="#e29-generar-serie-fibonacci" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Generar los primeros 10 números de la serie Fibonacci.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e30-contar-digitos-de-un-numero">E30. Contar dígitos de un número<a class="headerlink" href="#e30-contar-digitos-de-un-numero" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicitar un número y mostrar cuántos dígitos tiene.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>    <span class="n">n</span> <span class="o">//=</span> <span class="mi">10</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cantidad de dígitos:&quot;</span><span class="p">,</span> <span class="n">cont</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e31-verificar-numero-primo">E31. Verificar número primo<a class="headerlink" href="#e31-verificar-numero-primo" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Determinar si un número es primo.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="n">div</span> <span class="o">=</span> <span class="mi">2</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="n">es_primo</span> <span class="o">=</span> <span class="kc">True</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a><span class="k">while</span> <span class="n">div</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="n">div</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>        <span class="n">es_primo</span> <span class="o">=</span> <span class="kc">False</span>
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>        <span class="k">break</span>
+<a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>    <span class="n">div</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Es primo&quot;</span> <span class="k">if</span> <span class="n">es_primo</span> <span class="k">else</span> <span class="s2">&quot;No es primo&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e32-invertir-numero">E32. Invertir número<a class="headerlink" href="#e32-invertir-numero" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Invertir los dígitos de un número entero.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número: &quot;</span><span class="p">))</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="n">inv</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>    <span class="n">inv</span> <span class="o">=</span> <span class="n">inv</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">10</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>    <span class="n">n</span> <span class="o">//=</span> <span class="mi">10</span>
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Número invertido:&quot;</span><span class="p">,</span> <span class="n">inv</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e33-contar-vocales-en-frase">E33. Contar vocales en frase<a class="headerlink" href="#e33-contar-vocales-en-frase" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pedir una frase y contar vocales.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="n">frase</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Frase: &quot;</span><span class="p">)</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="n">vocales</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">frase</span><span class="p">):</span>
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>    <span class="k">if</span> <span class="n">frase</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="s2">&quot;aeiou&quot;</span><span class="p">:</span>
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>        <span class="n">vocales</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Vocales:&quot;</span><span class="p">,</span> <span class="n">vocales</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e34-control-de-intentos">E34. Control de intentos<a class="headerlink" href="#e34-control-de-intentos" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Permitir hasta 5 intentos para adivinar una clave secreta.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="n">clave</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="n">intentos</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="k">while</span> <span class="n">intentos</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>    <span class="n">c</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Ingrese la clave: &quot;</span><span class="p">)</span>
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>    <span class="k">if</span> <span class="n">c</span> <span class="o">==</span> <span class="n">clave</span><span class="p">:</span>
+<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Correcto&quot;</span><span class="p">)</span>
+<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>        <span class="k">break</span>
+<a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a>    <span class="n">intentos</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a><span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Demasiados intentos&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e35-calcular-promedio-de-edades">E35. Calcular promedio de edades<a class="headerlink" href="#e35-calcular-promedio-de-edades" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pedir edades hasta ingresar -1 y mostrar promedio.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="n">suma</span> <span class="o">=</span> <span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Edad (-1 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="k">while</span> <span class="n">edad</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>    <span class="n">suma</span> <span class="o">+=</span> <span class="n">edad</span>
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>    <span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Edad (-1 para salir): &quot;</span><span class="p">))</span>
+<a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Promedio:&quot;</span><span class="p">,</span> <span class="n">suma</span><span class="o">/</span><span class="n">cont</span> <span class="k">if</span> <span class="n">cont</span><span class="o">&gt;</span><span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e36-simular-reloj-digital">E36. Simular reloj digital<a class="headerlink" href="#e36-simular-reloj-digital" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Mostrar la hora desde 0:0 hasta 0:59 en formato mm:ss.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="n">m</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="k">while</span> <span class="n">m</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">:</span>
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>    <span class="k">while</span> <span class="n">s</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">:</span>
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;00:</span><span class="si">{</span><span class="n">m</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">s</span><span class="si">:</span><span class="s2">02</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>        <span class="n">s</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>    <span class="n">m</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e37-contador-de-palabras">E37. Contador de palabras<a class="headerlink" href="#e37-contador-de-palabras" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Solicitar texto y contar cuántas palabras contiene.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="n">texto</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Texto: &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">texto</span><span class="p">):</span>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>    <span class="k">if</span> <span class="n">texto</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot; &quot;</span><span class="p">:</span>
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>        <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Palabras:&quot;</span><span class="p">,</span> <span class="n">cont</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e38-convertir-binario-a-decimal">E38. Convertir binario a decimal<a class="headerlink" href="#e38-convertir-binario-a-decimal" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pedir un número binario (solo 0 y 1) y convertirlo a decimal.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="n">binario</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Número binario: &quot;</span><span class="p">)</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="n">i</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">binario</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a><span class="n">pot</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a><span class="n">decimal</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>    <span class="k">if</span> <span class="n">binario</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span><span class="p">:</span>
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>        <span class="n">decimal</span> <span class="o">+=</span> <span class="n">pot</span>
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>    <span class="n">pot</span> <span class="o">*=</span> <span class="mi">2</span>
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>    <span class="n">i</span> <span class="o">-=</span> <span class="mi">1</span>
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Decimal:&quot;</span><span class="p">,</span> <span class="n">decimal</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e39-serie-de-cuadrados">E39. Serie de cuadrados<a class="headerlink" href="#e39-serie-de-cuadrados" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Mostrar los cuadrados de los números del 1 al 10.</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;al cuadrado es&quot;</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a>    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="e40-contador-total-de-letras">E40. Contador total de letras<a class="headerlink" href="#e40-contador-total-de-letras" title="Permanent link">&para;</a></h3>
+<p><strong>Requerimiento:</strong> Pedir una palabra y contar cuántas letras contiene (sin usar <code>len()</code>).</p>
+<details><summary>Ver solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="n">palabra</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Palabra: &quot;</span><span class="p">)</span>
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a><span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">palabra</span><span class="p">:</span>
+<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a>    <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cantidad de letras:&quot;</span><span class="p">,</span> <span class="n">cont</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="recomendaciones-finales">✅ Recomendaciones finales<a class="headerlink" href="#recomendaciones-finales" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Usa <code>while</code> cuando <strong>no conoces cuántas repeticiones</strong> serán necesarias.  </li>
+<li>Asegúrate de <strong>modificar variables internas</strong> dentro del bucle para evitar bucles infinitos.  </li>
+<li>Prefiere <code>for</code> cuando el número de iteraciones es <strong>conocido o definido</strong>.  </li>
+<li>Combina <code>while</code> con <code>if</code> para construir programas interactivos (menús, validaciones, etc.).</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.expand", "navigation.top", "content.code.copy", "content.action.edit", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
