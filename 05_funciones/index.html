@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#clase-funciones-en-python-parte-1-y-2" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -457,6 +462,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    05 · functions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -469,6 +489,511 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-1-concepto-y-fundamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 PARTE 1 — Concepto y fundamentos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔹 PARTE 1 — Concepto y fundamentos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-que-es-una-funcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 1. ¿Qué es una función?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-estructura-basica-de-una-funcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 2. Estructura básica de una función
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-sin-parametros-ni-retorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 1 — Sin parámetros ni retorno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-con-parametros" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 2 — Con parámetros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-3-con-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 3 — Con return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4-con-valores-por-defecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 4 — Con valores por defecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-5-documentacion-con-docstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 5 — Documentación con docstring
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-parte-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Ejercicios Parte 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Ejercicios Parte 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Ejercicio 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📏 Ejercicio 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌡️ Ejercicio 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔢 Ejercicio 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Ejercicio 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      💬 Ejercicio 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 Ejercicio 7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔠 Ejercicio 8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Ejercicio 9
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mini-desafio-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Mini-desafío (opcional)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-2-funciones-avanzadas-y-aplicacion-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 PARTE 2 — Funciones avanzadas y aplicación práctica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔹 PARTE 2 — Funciones avanzadas y aplicación práctica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-funcion-dentro-de-otra" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Ejemplo 1 — Función dentro de otra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-funciones-con-condiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Ejemplo 2 — Funciones con condiciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-evaluar_notanota-if-nota-40-return-aprobado-else-return-reprobado-printevaluar_nota35" class="md-nav__link">
+    <span class="md-ellipsis">
+      def evaluar_nota(nota): if nota &gt;= 4.0: return &quot;Aprobado&quot; else: return &quot;Reprobado&quot; print(evaluar_nota(3.5))
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="def evaluar_nota(nota): if nota &gt;= 4.0: return &#34;Aprobado&#34; else: return &#34;Reprobado&#34; print(evaluar_nota(3.5))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-3-funcion-con-bucle" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Ejemplo 3 — Función con bucle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4-funcion-con-validacion-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Ejemplo 4 — Función con validación simple
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-parte-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Ejercicios Parte 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Ejercicios Parte 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-8_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-9_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 9
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-12-composicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 12 (composición)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-13-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 13 (validación)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-14-acumuladores" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 14 (acumuladores)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-15-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 15 (listas)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-16-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 16 (strings)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-17-conteo-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 17 (conteo de caracteres)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-18-seleccion-multiple" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 18 (selección múltiple)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-19-anidacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 19 (anidación)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-20-desafio" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 20 (desafío)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Cierre
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Cierre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sugerencia-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      📎 Sugerencia de uso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -638,6 +1163,502 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-1-concepto-y-fundamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 PARTE 1 — Concepto y fundamentos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔹 PARTE 1 — Concepto y fundamentos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-que-es-una-funcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 1. ¿Qué es una función?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-estructura-basica-de-una-funcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 2. Estructura básica de una función
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-sin-parametros-ni-retorno" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 1 — Sin parámetros ni retorno
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-con-parametros" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 2 — Con parámetros
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-3-con-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 3 — Con return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4-con-valores-por-defecto" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 4 — Con valores por defecto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-5-documentacion-con-docstring" class="md-nav__link">
+    <span class="md-ellipsis">
+      📘 Ejemplo 5 — Documentación con docstring
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-parte-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Ejercicios Parte 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Ejercicios Parte 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Ejercicio 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      📏 Ejercicio 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌡️ Ejercicio 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔢 Ejercicio 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Ejercicio 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      💬 Ejercicio 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 Ejercicio 7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔠 Ejercicio 8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧮 Ejercicio 9
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mini-desafio-opcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Mini-desafío (opcional)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-2-funciones-avanzadas-y-aplicacion-practica" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 PARTE 2 — Funciones avanzadas y aplicación práctica
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔹 PARTE 2 — Funciones avanzadas y aplicación práctica">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#objetivos_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 Objetivos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-1-funcion-dentro-de-otra" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Ejemplo 1 — Función dentro de otra
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-2-funciones-con-condiciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Ejemplo 2 — Funciones con condiciones
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#def-evaluar_notanota-if-nota-40-return-aprobado-else-return-reprobado-printevaluar_nota35" class="md-nav__link">
+    <span class="md-ellipsis">
+      def evaluar_nota(nota): if nota &gt;= 4.0: return &quot;Aprobado&quot; else: return &quot;Reprobado&quot; print(evaluar_nota(3.5))
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="def evaluar_nota(nota): if nota &gt;= 4.0: return &#34;Aprobado&#34; else: return &#34;Reprobado&#34; print(evaluar_nota(3.5))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-3-funcion-con-bucle" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Ejemplo 3 — Función con bucle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-4-funcion-con-validacion-simple" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ Ejemplo 4 — Función con validación simple
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ejercicios-parte-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 Ejercicios Parte 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 Ejercicios Parte 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-8_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-9_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 9
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 10
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 11
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-12-composicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 12 (composición)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-13-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 13 (validación)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-14-acumuladores" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 14 (acumuladores)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-15-listas" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 15 (listas)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-16-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 16 (strings)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-17-conteo-de-caracteres" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 17 (conteo de caracteres)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-18-seleccion-multiple" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 18 (selección múltiple)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-19-anidacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 19 (anidación)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ejercicio-20-desafio" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Ejercicio 20 (desafío)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cierre" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Cierre
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 Cierre">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sugerencia-de-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      📎 Sugerencia de uso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -661,9 +1682,635 @@
   
 
 
-  <h1>05 · functions</h1>
+<h1 id="clase-funciones-en-python-parte-1-y-2">🧩 Clase: Funciones en Python (Parte 1 y 2)<a class="headerlink" href="#clase-funciones-en-python-parte-1-y-2" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="parte-1-concepto-y-fundamentos">🔹 PARTE 1 — Concepto y fundamentos<a class="headerlink" href="#parte-1-concepto-y-fundamentos" title="Permanent link">&para;</a></h2>
+<h3 id="objetivos">🎯 Objetivos<a class="headerlink" href="#objetivos" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Comprender qué es una función y su utilidad.</li>
+<li>Relacionar las funciones matemáticas con las funciones en programación.</li>
+<li>Aprender a definir funciones con y sin <code>return</code>.</li>
+<li>Practicar funciones básicas en Python.</li>
+</ul>
+<hr />
+<h3 id="1-que-es-una-funcion">🧠 1. ¿Qué es una función?<a class="headerlink" href="#1-que-es-una-funcion" title="Permanent link">&para;</a></h3>
+<p>Una <strong>función</strong> es un bloque de código reutilizable que realiza una tarea específica.<br />
+Se puede ejecutar (llamar) muchas veces sin reescribir el mismo código.</p>
+<p>📊 <strong>Ejemplo matemático:</strong></p>
+<p>[
+f(x) = x^2 + 1
+]</p>
+<p>En Python:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>  <span class="c1"># → 5</span>
+</code></pre></div>
+<hr />
+<h3 id="2-estructura-basica-de-una-funcion">⚙️ 2. Estructura básica de una función<a class="headerlink" href="#2-estructura-basica-de-una-funcion" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">nombre_funcion</span><span class="p">(</span><span class="n">parámetros</span><span class="p">):</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="c1"># bloque de código</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">return</span> <span class="n">resultado_opcional</span>
+</code></pre></div>
+<p><strong>Notas:</strong>
+- Los <strong>parámetros</strong> son los datos de entrada.
+- <code>return</code> <strong>devuelve</strong> un valor a quien llama a la función (opcional).
+- Si no hay <code>return</code>, la función devuelve <code>None</code> por defecto.</p>
+<hr />
+<h3 id="ejemplo-1-sin-parametros-ni-retorno">📘 Ejemplo 1 — Sin parámetros ni retorno<a class="headerlink" href="#ejemplo-1-sin-parametros-ni-retorno" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">saludar</span><span class="p">():</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hola, bienvenido a la clase de Python!&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">saludar</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h3 id="ejemplo-2-con-parametros">📘 Ejemplo 2 — Con parámetros<a class="headerlink" href="#ejemplo-2-con-parametros" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">, ¡bienvenido!&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">saludar</span><span class="p">(</span><span class="s2">&quot;Mirko&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="ejemplo-3-con-return">📘 Ejemplo 3 — Con <code>return</code><a class="headerlink" href="#ejemplo-3-con-return" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">sumar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">resultado</span> <span class="o">=</span> <span class="n">sumar</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La suma es:&quot;</span><span class="p">,</span> <span class="n">resultado</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="ejemplo-4-con-valores-por-defecto">📘 Ejemplo 4 — Con valores por defecto<a class="headerlink" href="#ejemplo-4-con-valores-por-defecto" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">potencia</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">exponente</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">return</span> <span class="n">base</span> <span class="o">**</span> <span class="n">exponente</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">potencia</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>     <span class="c1"># 25</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">potencia</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># 8</span>
+</code></pre></div>
+<hr />
+<h3 id="ejemplo-5-documentacion-con-docstring">📘 Ejemplo 5 — Documentación con docstring<a class="headerlink" href="#ejemplo-5-documentacion-con-docstring" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">celsius_a_fahrenheit</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;Convierte grados Celsius a Fahrenheit.</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="sd">    Fórmula: F = C * 9/5 + 32</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">return</span> <span class="n">c</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+</code></pre></div>
+<hr />
+<h2 id="ejercicios-parte-1">🧩 Ejercicios Parte 1<a class="headerlink" href="#ejercicios-parte-1" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>⚠️ Las soluciones están ocultas por defecto.<br />
+Despliega cada bloque para revisar y comparar tus resultados.</p>
+</blockquote>
+<hr />
+<h3 id="ejercicio-1">🧮 Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Permanent link">&para;</a></h3>
+<p>Escribe una función que reciba un nombre y diga “Hola [nombre]”.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
 
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">saludar</span><span class="p">(</span><span class="s2">&quot;Lucas&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
 
+<hr />
+<h3 id="ejercicio-2">📏 Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Permanent link">&para;</a></h3>
+<p>Crea una función que calcule el área de un rectángulo.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">area_rectangulo</span><span class="p">(</span><span class="n">base</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="k">return</span> <span class="n">base</span> <span class="o">*</span> <span class="n">altura</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">area_rectangulo</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-3">🌡️ Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Permanent link">&para;</a></h3>
+<p>Crea una función que convierta grados Celsius a Fahrenheit.<br />
+(usa la fórmula F = C * 9/5 + 32)</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">celsius_a_fahrenheit</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="k">return</span> <span class="n">c</span> <span class="o">*</span> <span class="mi">9</span><span class="o">/</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">celsius_a_fahrenheit</span><span class="p">(</span><span class="mi">25</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-4">🔢 Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Permanent link">&para;</a></h3>
+<p>Crea una función que diga si un número es par o impar.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">es_par</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>        <span class="k">return</span> <span class="s2">&quot;Par&quot;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>        <span class="k">return</span> <span class="s2">&quot;Impar&quot;</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">es_par</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-5">🧮 Ejercicio 5<a class="headerlink" href="#ejercicio-5" title="Permanent link">&para;</a></h3>
+<p>Crea una función que calcule el promedio de tres notas y devuelva el resultado.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">promedio</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">,</span> <span class="n">n3</span><span class="p">):</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span> <span class="o">+</span> <span class="n">n3</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">promedio</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-6">💬 Ejercicio 6<a class="headerlink" href="#ejercicio-6" title="Permanent link">&para;</a></h3>
+<p>Crea una función que reciba un número y muestre su cuadrado y su cubo.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">potencia</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cuadrado:&quot;</span><span class="p">,</span> <span class="n">num</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cubo:&quot;</span><span class="p">,</span> <span class="n">num</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="n">potencia</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-7">🧭 Ejercicio 7<a class="headerlink" href="#ejercicio-7" title="Permanent link">&para;</a></h3>
+<p>Define una función que imprima un mensaje personalizado 3 veces.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">repetir_mensaje</span><span class="p">(</span><span class="n">mensaje</span><span class="p">):</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">repetir_mensaje</span><span class="p">(</span><span class="s2">&quot;Estudia Python&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-8">🔠 Ejercicio 8<a class="headerlink" href="#ejercicio-8" title="Permanent link">&para;</a></h3>
+<p>Escribe una función que reciba un carácter y diga si es vocal.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">es_vocal</span><span class="p">(</span><span class="n">ch</span><span class="p">):</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="k">return</span> <span class="n">ch</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="s2">&quot;aeiou&quot;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">es_vocal</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">))</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">es_vocal</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-9">🧮 Ejercicio 9<a class="headerlink" href="#ejercicio-9" title="Permanent link">&para;</a></h3>
+<p>Crea una función <code>abs_valor(n)</code> que devuelva el valor absoluto de <code>n</code> <strong>sin</strong> usar <code>abs()</code>.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">abs_valor</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>        <span class="k">return</span> <span class="o">-</span><span class="n">n</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="k">return</span> <span class="n">n</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">abs_valor</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">),</span> <span class="n">abs_valor</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="mini-desafio-opcional">🚀 Mini-desafío (opcional)<a class="headerlink" href="#mini-desafio-opcional" title="Permanent link">&para;</a></h3>
+<p>Crea una función <code>presentacion(nombre, edad, carrera)</code> que muestre un texto como:</p>
+<blockquote>
+<p>“Hola, soy Mirko, tengo 24 años y estudio Ingeniería Civil en Informática.”</p>
+</blockquote>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">presentacion</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="n">carrera</span><span class="p">):</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hola, soy </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">, tengo </span><span class="si">{</span><span class="n">edad</span><span class="si">}</span><span class="s2"> años y estudio </span><span class="si">{</span><span class="n">carrera</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="n">presentacion</span><span class="p">(</span><span class="s2">&quot;Mirko&quot;</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="s2">&quot;Ingeniería Civil en Informática&quot;</span><span class="p">)</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="parte-2-funciones-avanzadas-y-aplicacion-practica">🔹 PARTE 2 — Funciones avanzadas y aplicación práctica<a class="headerlink" href="#parte-2-funciones-avanzadas-y-aplicacion-practica" title="Permanent link">&para;</a></h2>
+<h3 id="objetivos_1">🎯 Objetivos<a class="headerlink" href="#objetivos_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Usar funciones para resolver problemas más complejos.</li>
+<li>Combinar condiciones, bucles y llamadas entre funciones.</li>
+<li>Comprender el uso de <code>return</code> en flujos de decisión.</li>
+<li>Escribir funciones puras y reutilizables.</li>
+</ul>
+<hr />
+<h3 id="ejemplo-1-funcion-dentro-de-otra">⚙️ Ejemplo 1 — Función dentro de otra<a class="headerlink" href="#ejemplo-1-funcion-dentro-de-otra" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">cuadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="k">return</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">suma_cuadrados</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>    <span class="k">return</span> <span class="n">cuadrado</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="n">cuadrado</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">suma_cuadrados</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># → 13</span>
+</code></pre></div>
+<hr />
+<h3 id="ejemplo-2-funciones-con-condiciones">⚙️ Ejemplo 2 — Funciones con condiciones<a class="headerlink" href="#ejemplo-2-funciones-con-condiciones" title="Permanent link">&para;</a></h3>
+<h2 id="def-evaluar_notanota-if-nota-40-return-aprobado-else-return-reprobado-printevaluar_nota35"><div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">evaluar_nota</span><span class="p">(</span><span class="n">nota</span><span class="p">):</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>    <span class="k">if</span> <span class="n">nota</span> <span class="o">&gt;=</span> <span class="mf">4.0</span><span class="p">:</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>        <span class="k">return</span> <span class="s2">&quot;Aprobado&quot;</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>        <span class="k">return</span> <span class="s2">&quot;Reprobado&quot;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">evaluar_nota</span><span class="p">(</span><span class="mf">3.5</span><span class="p">))</span>
+</code></pre></div><a class="headerlink" href="#def-evaluar_notanota-if-nota-40-return-aprobado-else-return-reprobado-printevaluar_nota35" title="Permanent link">&para;</a></h2>
+<h3 id="ejemplo-3-funcion-con-bucle">⚙️ Ejemplo 3 — Función con bucle<a class="headerlink" href="#ejemplo-3-funcion-con-bucle" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">imprimir_tabla</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> x </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">n</span><span class="o">*</span><span class="n">i</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="n">imprimir_tabla</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="ejemplo-4-funcion-con-validacion-simple">⚙️ Ejemplo 4 — Función con validación simple<a class="headerlink" href="#ejemplo-4-funcion-con-validacion-simple" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">dividir</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>        <span class="k">return</span> <span class="s2">&quot;Error: división por cero&quot;</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">dividir</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">dividir</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</code></pre></div>
+<hr />
+<h2 id="ejercicios-parte-2">🧩 Ejercicios Parte 2<a class="headerlink" href="#ejercicios-parte-2" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="ejercicio-1_1">💡 Ejercicio 1<a class="headerlink" href="#ejercicio-1_1" title="Permanent link">&para;</a></h3>
+<p>Crea una función que reciba una lista de números y devuelva la suma de los pares.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">suma_pares</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>            <span class="n">total</span> <span class="o">+=</span> <span class="n">n</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="k">return</span> <span class="n">total</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">suma_pares</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-2_1">💡 Ejercicio 2<a class="headerlink" href="#ejercicio-2_1" title="Permanent link">&para;</a></h3>
+<p>Crea una función que reciba una lista de nombres y devuelva cuántos tienen más de 5 letras.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">contar_largos</span><span class="p">(</span><span class="n">nombres</span><span class="p">):</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>    <span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nombres</span><span class="p">:</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>            <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    <span class="k">return</span> <span class="n">cont</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">contar_largos</span><span class="p">([</span><span class="s2">&quot;Ana&quot;</span><span class="p">,</span> <span class="s2">&quot;Valentina&quot;</span><span class="p">,</span> <span class="s2">&quot;Pedro&quot;</span><span class="p">,</span> <span class="s2">&quot;Sebastián&quot;</span><span class="p">]))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-3_1">💡 Ejercicio 3<a class="headerlink" href="#ejercicio-3_1" title="Permanent link">&para;</a></h3>
+<p>Crea una función que calcule el IMC y otra que lo clasifique según el valor.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">calcular_imc</span><span class="p">(</span><span class="n">peso</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>    <span class="k">return</span> <span class="n">peso</span> <span class="o">/</span> <span class="p">(</span><span class="n">altura</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">clasificar_imc</span><span class="p">(</span><span class="n">imc</span><span class="p">):</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="k">if</span> <span class="n">imc</span> <span class="o">&lt;</span> <span class="mf">18.5</span><span class="p">:</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>        <span class="k">return</span> <span class="s2">&quot;Bajo peso&quot;</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="k">elif</span> <span class="n">imc</span> <span class="o">&lt;</span> <span class="mi">25</span><span class="p">:</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>        <span class="k">return</span> <span class="s2">&quot;Normal&quot;</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>    <span class="k">elif</span> <span class="n">imc</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">:</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>        <span class="k">return</span> <span class="s2">&quot;Sobrepeso&quot;</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>        <span class="k">return</span> <span class="s2">&quot;Obesidad&quot;</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="n">imc</span> <span class="o">=</span> <span class="n">calcular_imc</span><span class="p">(</span><span class="mi">68</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">)</span>
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">clasificar_imc</span><span class="p">(</span><span class="n">imc</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-4_1">💡 Ejercicio 4<a class="headerlink" href="#ejercicio-4_1" title="Permanent link">&para;</a></h3>
+<p>Combina ambas funciones del ejercicio anterior en una sola función <code>evaluar_imc</code>.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">evaluar_imc</span><span class="p">(</span><span class="n">peso</span><span class="p">,</span> <span class="n">altura</span><span class="p">):</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>    <span class="n">imc</span> <span class="o">=</span> <span class="n">peso</span> <span class="o">/</span> <span class="p">(</span><span class="n">altura</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>    <span class="k">if</span> <span class="n">imc</span> <span class="o">&lt;</span> <span class="mf">18.5</span><span class="p">:</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>        <span class="n">estado</span> <span class="o">=</span> <span class="s2">&quot;Bajo peso&quot;</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    <span class="k">elif</span> <span class="n">imc</span> <span class="o">&lt;</span> <span class="mi">25</span><span class="p">:</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>        <span class="n">estado</span> <span class="o">=</span> <span class="s2">&quot;Normal&quot;</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>    <span class="k">elif</span> <span class="n">imc</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">:</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>        <span class="n">estado</span> <span class="o">=</span> <span class="s2">&quot;Sobrepeso&quot;</span>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>        <span class="n">estado</span> <span class="o">=</span> <span class="s2">&quot;Obesidad&quot;</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;IMC: </span><span class="si">{</span><span class="n">imc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="n">estado</span><span class="si">}</span><span class="s2">)&quot;</span>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="nb">print</span><span class="p">(</span><span class="n">evaluar_imc</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-5_1">💡 Ejercicio 5<a class="headerlink" href="#ejercicio-5_1" title="Permanent link">&para;</a></h3>
+<p>Crea una función que pida tres notas y diga si el estudiante aprueba o reprueba.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">evaluar_estudiante</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">,</span> <span class="n">n3</span><span class="p">):</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>    <span class="n">prom</span> <span class="o">=</span> <span class="p">(</span><span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span> <span class="o">+</span> <span class="n">n3</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>    <span class="k">if</span> <span class="n">prom</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Promedio </span><span class="si">{</span><span class="n">prom</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> → Aprobado&quot;</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Promedio </span><span class="si">{</span><span class="n">prom</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2"> → Reprobado&quot;</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">evaluar_estudiante</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-6_1">💡 Ejercicio 6<a class="headerlink" href="#ejercicio-6_1" title="Permanent link">&para;</a></h3>
+<p>Crea una función que cuente cuántas vocales tiene una palabra.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">contar_vocales</span><span class="p">(</span><span class="n">palabra</span><span class="p">):</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>    <span class="n">vocales</span> <span class="o">=</span> <span class="s2">&quot;aeiouAEIOU&quot;</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>    <span class="n">cont</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>    <span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">palabra</span><span class="p">:</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>        <span class="k">if</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">vocales</span><span class="p">:</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>            <span class="n">cont</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>    <span class="k">return</span> <span class="n">cont</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="nb">print</span><span class="p">(</span><span class="n">contar_vocales</span><span class="p">(</span><span class="s2">&quot;Programación&quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-7_1">💡 Ejercicio 7<a class="headerlink" href="#ejercicio-7_1" title="Permanent link">&para;</a></h3>
+<p>Crea una función que reciba una lista de números y devuelva el mayor y el menor.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">extremos</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>    <span class="n">mayor</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>    <span class="n">menor</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>    <span class="k">return</span> <span class="n">mayor</span><span class="p">,</span> <span class="n">menor</span>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">extremos</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-8_1">💡 Ejercicio 8<a class="headerlink" href="#ejercicio-8_1" title="Permanent link">&para;</a></h3>
+<p>Crea una función que determine si una palabra es palíndromo.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">es_palindromo</span><span class="p">(</span><span class="n">palabra</span><span class="p">):</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>    <span class="n">palabra</span> <span class="o">=</span> <span class="n">palabra</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="k">return</span> <span class="n">palabra</span> <span class="o">==</span> <span class="n">palabra</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="nb">print</span><span class="p">(</span><span class="n">es_palindromo</span><span class="p">(</span><span class="s2">&quot;anita lava la tina&quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-9_1">💡 Ejercicio 9<a class="headerlink" href="#ejercicio-9_1" title="Permanent link">&para;</a></h3>
+<p>Crea una función que reciba una lista de notas y devuelva cuántos aprobaron y cuántos reprobaron.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">contar_aprobados</span><span class="p">(</span><span class="n">notas</span><span class="p">):</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>    <span class="n">aprobados</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>    <span class="n">reprobados</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">notas</span><span class="p">:</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>        <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>            <span class="n">aprobados</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>            <span class="n">reprobados</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>    <span class="k">return</span> <span class="n">aprobados</span><span class="p">,</span> <span class="n">reprobados</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">contar_aprobados</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">]))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-10">💡 Ejercicio 10<a class="headerlink" href="#ejercicio-10" title="Permanent link">&para;</a></h3>
+<p>Crea una función <code>filtrar_pares(lista)</code> que devuelva una nueva lista solo con números pares.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">filtrar_pares</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>    <span class="n">pares</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">lista</span><span class="p">:</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>        <span class="k">if</span> <span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>            <span class="n">pares</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>    <span class="k">return</span> <span class="n">pares</span>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">filtrar_pares</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-11">💡 Ejercicio 11<a class="headerlink" href="#ejercicio-11" title="Permanent link">&para;</a></h3>
+<p>Crea una función <code>contar_palabras(frase)</code> que devuelva cuántas palabras tiene una frase.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">contar_palabras</span><span class="p">(</span><span class="n">frase</span><span class="p">):</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">frase</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">contar_palabras</span><span class="p">(</span><span class="s2">&quot;Hola mundo desde Python&quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-12-composicion">💡 Ejercicio 12 (composición)<a class="headerlink" href="#ejercicio-12-composicion" title="Permanent link">&para;</a></h3>
+<p>Define <code>cuadrado(x)</code>, <code>cubo(x)</code> y <code>suma_potencias(a,b)</code> que devuelva <code>cuadrado(a) + cubo(b)</code>.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">cuadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">cubo</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span>
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">suma_potencias</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>    <span class="k">return</span> <span class="n">cuadrado</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="n">cubo</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>
+<a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="nb">print</span><span class="p">(</span><span class="n">suma_potencias</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-13-validacion">💡 Ejercicio 13 (validación)<a class="headerlink" href="#ejercicio-13-validacion" title="Permanent link">&para;</a></h3>
+<p>Escribe <code>dividir(a,b)</code> que devuelva el cociente o el mensaje <code>"Error: división por cero"</code>.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">dividir</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>    <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>        <span class="k">return</span> <span class="s2">&quot;Error: división por cero&quot;</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>    <span class="k">return</span> <span class="n">a</span> <span class="o">/</span> <span class="n">b</span>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a><span class="nb">print</span><span class="p">(</span><span class="n">dividir</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">dividir</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-14-acumuladores">💡 Ejercicio 14 (acumuladores)<a class="headerlink" href="#ejercicio-14-acumuladores" title="Permanent link">&para;</a></h3>
+<p>Crea <code>suma_hasta(n)</code> que sume de 1 a <code>n</code> usando un bucle.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">suma_hasta</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>        <span class="n">total</span> <span class="o">+=</span> <span class="n">i</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>    <span class="k">return</span> <span class="n">total</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">suma_hasta</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-15-listas">💡 Ejercicio 15 (listas)<a class="headerlink" href="#ejercicio-15-listas" title="Permanent link">&para;</a></h3>
+<p>Crea <code>maximo_minimo(lista)</code> que retorne un diccionario con <code>{"max": ..., "min": ...}</code>.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">maximo_minimo</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;max&quot;</span><span class="p">:</span> <span class="nb">max</span><span class="p">(</span><span class="n">lista</span><span class="p">),</span> <span class="s2">&quot;min&quot;</span><span class="p">:</span> <span class="nb">min</span><span class="p">(</span><span class="n">lista</span><span class="p">)}</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">maximo_minimo</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">]))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-16-strings">💡 Ejercicio 16 (strings)<a class="headerlink" href="#ejercicio-16-strings" title="Permanent link">&para;</a></h3>
+<p>Crea <code>invertir_string(s)</code> que retorne el string invertido.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">invertir_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>    <span class="k">return</span> <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">invertir_string</span><span class="p">(</span><span class="s2">&quot;abcdef&quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-17-conteo-de-caracteres">💡 Ejercicio 17 (conteo de caracteres)<a class="headerlink" href="#ejercicio-17-conteo-de-caracteres" title="Permanent link">&para;</a></h3>
+<p>Crea <code>frecuencia_caracteres(s)</code> que retorne un diccionario {caracter: cantidad}.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">frecuencia_caracteres</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>    <span class="n">freq</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>    <span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>        <span class="n">freq</span><span class="p">[</span><span class="n">ch</span><span class="p">]</span> <span class="o">=</span> <span class="n">freq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ch</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>    <span class="k">return</span> <span class="n">freq</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">frecuencia_caracteres</span><span class="p">(</span><span class="s2">&quot;banana&quot;</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-18-seleccion-multiple">💡 Ejercicio 18 (selección múltiple)<a class="headerlink" href="#ejercicio-18-seleccion-multiple" title="Permanent link">&para;</a></h3>
+<p>Crea <code>nota_en_letra(n)</code> que convierta una nota numérica a letra:
+- <code>&gt;= 6.0</code>: "Excelente"
+- <code>&gt;= 5.0</code>: "Bueno"
+- <code>&gt;= 4.0</code>: "Suficiente"
+- <code>&lt; 4.0</code>: "Insuficiente"</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">nota_en_letra</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mf">6.0</span><span class="p">:</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>        <span class="k">return</span> <span class="s2">&quot;Excelente&quot;</span>
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mf">5.0</span><span class="p">:</span>
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>        <span class="k">return</span> <span class="s2">&quot;Bueno&quot;</span>
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>    <span class="k">elif</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="mf">4.0</span><span class="p">:</span>
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>        <span class="k">return</span> <span class="s2">&quot;Suficiente&quot;</span>
+<a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>    <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a>        <span class="k">return</span> <span class="s2">&quot;Insuficiente&quot;</span>
+<a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a>
+<a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">nota_en_letra</span><span class="p">(</span><span class="mf">5.6</span><span class="p">),</span> <span class="n">nota_en_letra</span><span class="p">(</span><span class="mf">3.9</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-19-anidacion">💡 Ejercicio 19 (anidación)<a class="headerlink" href="#ejercicio-19-anidacion" title="Permanent link">&para;</a></h3>
+<p>Crea <code>promedio3(a,b,c)</code>, <code>clasificar(prom)</code> y <code>evaluar(a,b,c)</code> que use ambas.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">promedio3</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">clasificar</span><span class="p">(</span><span class="n">prom</span><span class="p">):</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>    <span class="k">return</span> <span class="s2">&quot;Aprobado&quot;</span> <span class="k">if</span> <span class="n">prom</span> <span class="o">&gt;=</span> <span class="mi">4</span> <span class="k">else</span> <span class="s2">&quot;Reprobado&quot;</span>
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">evaluar</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+<a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a>    <span class="n">prom</span> <span class="o">=</span> <span class="n">promedio3</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+<a id="__codelineno-39-9" name="__codelineno-39-9" href="#__codelineno-39-9"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Promedio: </span><span class="si">{</span><span class="n">prom</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> → </span><span class="si">{</span><span class="n">clasificar</span><span class="p">(</span><span class="n">prom</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-39-10" name="__codelineno-39-10" href="#__codelineno-39-10"></a>
+<a id="__codelineno-39-11" name="__codelineno-39-11" href="#__codelineno-39-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">evaluar</span><span class="p">(</span><span class="mf">5.5</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h3 id="ejercicio-20-desafio">💡 Ejercicio 20 (desafío)<a class="headerlink" href="#ejercicio-20-desafio" title="Permanent link">&para;</a></h3>
+<p>Crea <code>estadisticas(lista)</code> que retorne un dict con: promedio, máximo, mínimo y cantidad.</p>
+<details>
+<summary>💡 Mostrar solución</summary>
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">estadisticas</span><span class="p">(</span><span class="n">lista</span><span class="p">):</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>    <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span>
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>        <span class="s2">&quot;promedio&quot;</span><span class="p">:</span> <span class="n">total</span> <span class="o">/</span> <span class="n">n</span> <span class="k">if</span> <span class="n">n</span> <span class="k">else</span> <span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>        <span class="s2">&quot;max&quot;</span><span class="p">:</span> <span class="nb">max</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>        <span class="s2">&quot;min&quot;</span><span class="p">:</span> <span class="nb">min</span><span class="p">(</span><span class="n">lista</span><span class="p">)</span> <span class="k">if</span> <span class="n">n</span> <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>        <span class="s2">&quot;cantidad&quot;</span><span class="p">:</span> <span class="n">n</span>
+<a id="__codelineno-40-9" name="__codelineno-40-9" href="#__codelineno-40-9"></a>    <span class="p">}</span>
+<a id="__codelineno-40-10" name="__codelineno-40-10" href="#__codelineno-40-10"></a>
+<a id="__codelineno-40-11" name="__codelineno-40-11" href="#__codelineno-40-11"></a><span class="nb">print</span><span class="p">(</span><span class="n">estadisticas</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+</code></pre></div>
+</details>
+
+<hr />
+<h2 id="cierre">🧠 Cierre<a class="headerlink" href="#cierre" title="Permanent link">&para;</a></h2>
+<p>Las funciones son <strong>bloques reutilizables</strong> que hacen tu código más <strong>ordenado</strong>, <strong>modular</strong> y <strong>eficiente</strong>.<br />
+Comprender el flujo entre <strong>entrada (parámetros)</strong> y <strong>salida (return)</strong> te permite construir programas complejos a partir de piezas simples.</p>
+<hr />
+<h3 id="sugerencia-de-uso">📎 Sugerencia de uso<a class="headerlink" href="#sugerencia-de-uso" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Úsalo como guía de clase/proyector.</li>
+<li>Dales a los estudiantes este mismo <code>.md</code> o pégalo en un Notebook.</li>
+<li>Pide que intenten cada ejercicio <strong>antes</strong> de abrir el bloque de solución.</li>
+</ul>
 
 
 
